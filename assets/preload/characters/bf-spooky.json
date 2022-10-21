@@ -156,7 +156,7 @@
 			],
 			"anim": "hey-stressed",
 			"fps": 24,
-			"name": "BF HEY!! stressed",
+			"name": "Stressed HEY!!",
 			"indices": []
 		},
 		{
@@ -346,6 +346,46 @@
 				6
 			],
 			"name": "BF-spooky"
+		},
+		{
+			"offsets": [
+				-14,
+				-22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight-stressed",
+			"indices": [
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Stressed spooky0"
+		},
+		{
+			"offsets": [
+				-14,
+				-22
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft-stressed",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"name": "Stressed spooky0"
 		}
 	],
 	"no_antialiasing": false,
