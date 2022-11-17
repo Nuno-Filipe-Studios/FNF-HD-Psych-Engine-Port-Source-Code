@@ -615,9 +615,11 @@ class FreeplayState extends MusicBeatState
 	public var canBop:Bool = false;
 	function iconBop():Void
 	{
-		var mult:Float = 1.2;
-		iconArray[instPlaying].scale.set(mult, mult);
-		iconArray[instPlaying].updateHitbox();
+		if(canBop) {
+			var mult:Float = 1.2;
+			iconArray[instPlaying].scale.set(mult, mult);
+			iconArray[instPlaying].updateHitbox();
+		}
 	}
 }
 
