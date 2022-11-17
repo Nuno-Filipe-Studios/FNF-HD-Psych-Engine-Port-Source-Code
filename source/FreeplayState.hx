@@ -464,7 +464,11 @@ class FreeplayState extends MusicBeatState
 	{
 		super.beatHit();
 
-		iconBop();
+		if(canBop)
+			iconBop();
+
+		if(!canBop)
+			FlxG.camera.zoom += 0.030;
 
 		if(lastBeatHit >= curBeat) {
 			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
@@ -615,11 +619,9 @@ class FreeplayState extends MusicBeatState
 	public var canBop:Bool = false;
 	function iconBop():Void
 	{
-		if(canBop) {
-			var mult:Float = 1.2;
-			iconArray[instPlaying].scale.set(mult, mult);
-			iconArray[instPlaying].updateHitbox();
-		}
+		var mult:Float = 1.2;
+		iconArray[instPlaying].scale.set(mult, mult);
+		iconArray[instPlaying].updateHitbox();
 	}
 }
 
