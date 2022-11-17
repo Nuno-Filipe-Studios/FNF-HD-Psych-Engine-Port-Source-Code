@@ -355,7 +355,7 @@ class FreeplayState extends MusicBeatState
 		}
 		else if(space)
 		{
-			if(instPlaying != curSelected)
+			if(instPlaying != curSelected && !curPlaying)
 			{
 				#if PRELOAD_ALL
 				destroyFreeplayVocals();
