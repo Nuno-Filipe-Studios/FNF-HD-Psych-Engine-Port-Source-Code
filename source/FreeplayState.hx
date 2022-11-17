@@ -466,8 +466,7 @@ class FreeplayState extends MusicBeatState
 
 		if(canBop)
 			iconBop();
-
-		if(!canBop)
+		else
 			FlxG.camera.zoom += 0.030;
 
 		if(lastBeatHit >= curBeat) {
