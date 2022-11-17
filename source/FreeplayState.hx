@@ -43,7 +43,7 @@ class FreeplayState extends MusicBeatState
 	var intendedScore:Int = 0;
 	var intendedRating:Float = 0;
 	var blammedSteps:Array<Int> = [
-		128,140,148,160,166,172,180, 
+		128,140,148,160,166,172,180,
 		192,204,212,224,230,236,244,
 		256,268,276,288,294,300,308,
 		320,332,340,352,358,364,372,
@@ -53,7 +53,7 @@ class FreeplayState extends MusicBeatState
 	];
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
-	private var curPlaying:Bool = false;
+	public static var curPlaying:Bool = false;
 
 	private var iconArray:Array<HealthIcon> = [];
 
@@ -113,6 +113,10 @@ class FreeplayState extends MusicBeatState
 			}
 		}*/
 
+		#if PRELOAD_ALL
+		if (!curPlaying) Conductor.changeBPM(TitleState.titleJSON.bpm);
+		#end
+
 		bg = new FlxSprite().loadGraphic(Paths.image('freeplayHD'));
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
@@ -171,6 +175,9 @@ class FreeplayState extends MusicBeatState
 			lastDifficultyName = CoolUtil.defaultDifficulty;
 		}
 		curDifficulty = Math.round(Math.max(0, CoolUtil.defaultDifficulties.indexOf(lastDifficultyName)));
+
+		if(curPlaying)
+			canBop = true;
 		
 		changeSelection();
 		changeDiff();
@@ -245,7 +252,7 @@ class FreeplayState extends MusicBeatState
 		}
 	}*/
 
-	var instPlaying:Int = -1;
+	public static var instPlaying:Int = -1;
 	public static var vocals:FlxSound = null;
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
@@ -275,6 +282,12 @@ class FreeplayState extends MusicBeatState
 
 		scoreText.text = 'PERSONAL BEST: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
 		positionHighscore();
+
+		if(canBop) {
+			var mult:Float = FlxMath.lerp(1, scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			iconArray[instPlaying].scale.set(mult, mult);
+			iconArray[instPlaying].updateHitbox();
+		}
 
 		var upP = controls.UI_UP_P;
 		var downP = controls.UI_DOWN_P;
@@ -363,10 +376,11 @@ class FreeplayState extends MusicBeatState
 				vocals.looped = true;
 				vocals.volume = 0.7;
 				instPlaying = curSelected;
+				canBop = true;
+				curPlaying = true;
 				#end
 			}
 		}
-
 		else if (accepted)
 		{
 			persistentUpdate = false;
@@ -391,7 +405,9 @@ class FreeplayState extends MusicBeatState
 			if(colorTween != null) {
 				colorTween.cancel();
 			}
-			
+
+			curPlaying = false;
+
 			if (FlxG.keys.pressed.SHIFT){
 				LoadingState.loadAndSwitchState(new ChartingState());
 			}else{
@@ -399,7 +415,7 @@ class FreeplayState extends MusicBeatState
 			}
 
 			FlxG.sound.music.volume = 0;
-					
+
 			destroyFreeplayVocals();
 		}
 		else if(controls.RESET)
@@ -446,6 +462,9 @@ class FreeplayState extends MusicBeatState
 	override function beatHit()
 	{
 		super.beatHit();
+
+		if (curPlaying)
+			iconArray[instPlaying].bop();
 
 		if(lastBeatHit >= curBeat) {
 			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
@@ -591,6 +610,16 @@ class FreeplayState extends MusicBeatState
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
+	}
+
+	public var canBop:Bool = false;
+	public function bop()
+	{
+		if(canBop) {
+			var mult:Float = 1.2;
+			iconArray[instPlaying].scale.set(mult, mult);
+			iconArray[instPlaying].updateHitbox();
+		}
 	}
 }
 
