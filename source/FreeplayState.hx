@@ -178,7 +178,7 @@ class FreeplayState extends MusicBeatState
 
 		if(curPlaying)
 			canBop = true;
-		
+
 		changeSelection();
 		changeDiff();
 
@@ -257,10 +257,11 @@ class FreeplayState extends MusicBeatState
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
 	{
+		if (FlxG.sound.music != null)
+			Conductor.songPosition = FlxG.sound.music.time;
+			
 		if (FlxG.sound.music.volume < 0.7)
-		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
-		}
 
 		FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, 0.95);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 24, 0, 1)));
@@ -284,7 +285,7 @@ class FreeplayState extends MusicBeatState
 		positionHighscore();
 
 		if(canBop) {
-			var mult:Float = FlxMath.lerp(1, scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			var mult:Float = FlxMath.lerp(1, iconArray[instPlaying].scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 			iconArray[instPlaying].scale.set(mult, mult);
 			iconArray[instPlaying].updateHitbox();
 		}
@@ -463,8 +464,7 @@ class FreeplayState extends MusicBeatState
 	{
 		super.beatHit();
 
-		if (curPlaying)
-			iconArray[instPlaying].bop();
+		iconBop();
 
 		if(lastBeatHit >= curBeat) {
 			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
@@ -613,13 +613,11 @@ class FreeplayState extends MusicBeatState
 	}
 
 	public var canBop:Bool = false;
-	public function bop()
+	function iconBop():Void
 	{
-		if(canBop) {
-			var mult:Float = 1.2;
-			iconArray[instPlaying].scale.set(mult, mult);
-			iconArray[instPlaying].updateHitbox();
-		}
+		var mult:Float = 1.2;
+		iconArray[instPlaying].scale.set(mult, mult);
+		iconArray[instPlaying].updateHitbox();
 	}
 }
 
