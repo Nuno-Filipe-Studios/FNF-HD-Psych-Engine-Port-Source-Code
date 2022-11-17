@@ -67,7 +67,6 @@ class FreeplayState extends MusicBeatState
 		Paths.clearUnusedMemory();
 		
 		persistentUpdate = true;
-		Conductor.changeBPM(110);
 		PlayState.isStoryMode = false;
 		WeekData.reloadWeekFiles(false);
 
@@ -379,6 +378,17 @@ class FreeplayState extends MusicBeatState
 				instPlaying = curSelected;
 				canBop = true;
 				curPlaying = true;
+				#end
+			}
+			else
+			{
+				#if PRELOAD_ALL
+				destroyFreeplayVocals();
+				FlxG.sound.music.volume = 0;
+				Conductor.changeBPM(TitleState.titleJSON.bpm);
+				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0.7);
+				canBop = false;
+				curPlaying = false;
 				#end
 			}
 		}
