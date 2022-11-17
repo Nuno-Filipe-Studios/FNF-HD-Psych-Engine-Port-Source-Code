@@ -477,7 +477,7 @@ class FreeplayState extends MusicBeatState
 		if(canBop)
 			iconBop();
 		else
-			FlxG.camera.zoom += 0.015;
+			FlxG.camera.zoom += 0.02;
 
 		if(lastBeatHit >= curBeat) {
 			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
