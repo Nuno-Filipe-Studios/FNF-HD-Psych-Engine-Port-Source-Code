@@ -59,7 +59,7 @@ class Gallery extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720,FlxColor.fromRGB(69, 108, 207),false);
 		add(bg);
 
-		checkers = new FlxBackdrop(Paths.image('gallery/checkers'), XY, 0, 0);
+		checkers = new FlxBackdrop(Paths.image('gallery/checkers'), 0, 0, true, true, 0, 0);
 		checkers.velocity.x = 20;
 		checkers.velocity.y = 20;
 		add(checkers);
