@@ -113,7 +113,10 @@ class FreeplayState extends MusicBeatState
 		}*/
 
 		#if PRELOAD_ALL
-		if (!curPlaying) Conductor.changeBPM(TitleState.titleJSON.bpm);
+		if (!curPlaying) {
+			Conductor.changeBPM(TitleState.titleJSON.bpm);
+			instPlaying = -1;
+		}
 		#end
 
 		bg = new FlxSprite().loadGraphic(Paths.image('freeplayHD'));
@@ -387,6 +390,7 @@ class FreeplayState extends MusicBeatState
 				FlxG.sound.music.volume = 0;
 				Conductor.changeBPM(TitleState.titleJSON.bpm);
 				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0.7);
+				instPlaying = -1;
 				canBop = false;
 				curPlaying = false;
 				#end
@@ -476,20 +480,18 @@ class FreeplayState extends MusicBeatState
 
 		if(canBop)
 			iconBop();
-		else
-			FlxG.camera.zoom += 0.02;
 
 		if(lastBeatHit >= curBeat) {
 			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
 			return;
 		}
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curBeat >= 8)
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && songs[instPlaying].songName == 'milf' && curBeat >= 8)
 		{
 			FlxG.camera.zoom += 0.030;
 		}
 		//Sum extra detail
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curBeat >= 168 && curBeat < 200)
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && songs[instPlaying].songName == 'milf' && curBeat >= 168 && curBeat < 200)
 		{
 			FlxG.camera.zoom += 0.060;
 		}
@@ -501,7 +503,7 @@ class FreeplayState extends MusicBeatState
 	{
 		super.stepHit();
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && blammedSteps.contains(curStep))
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && songs[instPlaying].songName == 'blammed' && blammedSteps.contains(curStep))
 		{
 			FlxG.camera.zoom += 0.070;
 		}

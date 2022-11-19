@@ -352,8 +352,8 @@
 		},
 		{
 			"offsets": [
-				-3,
-				-54
+				10,
+				-22
 			],
 			"loop": false,
 			"fps": 24,
@@ -363,8 +363,8 @@
 		},
 		{
 			"offsets": [
-				-3,
-				-54
+				10,
+				-22
 			],
 			"loop": false,
 			"fps": 24,
@@ -374,29 +374,31 @@
 		},
 		{
 			"offsets": [
-				-3,
-				-54
+				10,
+				-22
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "dodge-loop",
 			"indices": [
 				11,
-				12
+				12,
+				13
 			],
 			"name": "boyfriend dodge"
 		},
 		{
 			"offsets": [
-				-3,
-				-54
+				10,
+				-22
 			],
 			"loop": true,
 			"fps": 24,
 			"anim": "dodge-stressed-loop",
 			"indices": [
-				11,
-				12
+				14,
+				15,
+				16
 			],
 			"name": "Stressed dodge"
 		},
@@ -584,7 +586,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/bfCar_MILF",
+	"image": "characters/bfCar",
 	"position": [
 		0,
 		318
@@ -597,8 +599,8 @@
 		209
 	],
 	"camera_position": [
-		-43,
-		24
+		0,
+		0
 	],
 	"sing_duration": 4,
 	"scale": 1
