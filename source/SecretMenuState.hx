@@ -7,7 +7,7 @@ import flixel.text.FlxText;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.animation.FlxAnimation;
 import flixel.util.FlxColor;
-import flixel.addons.display.FlxBackdrop;
+//import flixel.addons.display.FlxBackdrop;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.effects.FlxFlicker;
@@ -27,7 +27,7 @@ class SecretMenuState extends MusicBeatState
 	var weekTexts:FlxTypedGroup<FlxSprite>;
 	var selectionBG:FlxTypedGroup<FlxSprite>;
 	var curSelected:Int = 0;
-	var checkers:FlxBackdrop;
+	//var checkers:FlxBackdrop;
 	var logoBl:FlxSprite;
 	var rightArrow:FlxSprite;
 	var leftArrow:FlxSprite;
@@ -58,10 +58,10 @@ class SecretMenuState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720,FlxColor.fromRGB(69, 108, 207), false);
 		add(bg);
 
-		checkers = new FlxBackdrop(Paths.image('gallery/checkers'), 0, 0, true, true, 0, 0);
+		/*checkers = new FlxBackdrop(Paths.image('gallery/checkers'), XY, 0, 0);
 		checkers.velocity.x = 20;
 		checkers.velocity.y = 20;
-		add(checkers);
+		add(checkers);*/
 
 		weekTexts = new FlxTypedGroup<FlxSprite>();
 		selectionBG = new FlxTypedGroup<FlxSprite>();
@@ -175,8 +175,8 @@ class SecretMenuState extends MusicBeatState
 			canSelect = false;
 		}
 		if (controls.BACK) {
-			checkers.velocity.x = 0;
-			checkers.velocity.y = 0;
+			//checkers.velocity.x = 0;
+			//checkers.velocity.y = 0;
 			stopspamming = true;
 			canSelect = false;
 			FlxG.sound.music.stop();
