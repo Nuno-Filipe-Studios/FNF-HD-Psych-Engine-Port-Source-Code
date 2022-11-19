@@ -254,6 +254,8 @@ class FreeplayState extends MusicBeatState
 		}
 	}*/
 
+	var zoomThing:String = '';
+
 	public static var instPlaying:Int = -1;
 	public static var vocals:FlxSound = null;
 	var holdTime:Float = 0;
@@ -291,6 +293,13 @@ class FreeplayState extends MusicBeatState
 			iconArray[instPlaying].scale.set(mult, mult);
 			iconArray[instPlaying].updateHitbox();
 		}
+
+		if(songs[instPlaying].songName.toLowerCase() == 'blammed')
+			zoomThing = 'blammed';
+		else if(songs[instPlaying].songName.toLowerCase() == 'milf')
+			zoomThing = 'milf';
+		else
+			zoomThing = '';
 
 		var upP = controls.UI_UP_P;
 		var downP = controls.UI_DOWN_P;
@@ -486,14 +495,13 @@ class FreeplayState extends MusicBeatState
 			return;
 		}
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curBeat >= 8)
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && zoomThing == 'milf')
 		{
-			FlxG.camera.zoom += 0.030;
-		}
-		//Sum extra detail
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curBeat >= 168 && curBeat < 200)
-		{
-			FlxG.camera.zoom += 0.060;
+			if (curBeat >= 8)
+				FlxG.camera.zoom += 0.030;
+			//Sum extra detail
+			if (curBeat >= 168 && curBeat < 200)
+				FlxG.camera.zoom += 0.060;
 		}
 
 		lastBeatHit = curBeat;
@@ -503,7 +511,7 @@ class FreeplayState extends MusicBeatState
 	{
 		super.stepHit();
 
-		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && blammedSteps.contains(curStep))
+		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName.toLowerCase() == 'blammed' && zoomThing == 'blammed' && blammedSteps.contains(curStep))
 		{
 			FlxG.camera.zoom += 0.070;
 		}
