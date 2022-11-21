@@ -112,7 +112,7 @@ class Gallery extends MusicBeatState
 			for (j in 0...leStuff.weekImage) {
 				var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + weekImage[j]));
 				weekText.antialiasing = ClientPrefs.globalAntialiasing;
-				weekText.ID = i;
+				weekText.ID = j;
 				weekText.setGraphicSize(Std.int(weekText.width * 0.7));
 				weekTexts.add(weekText);
 			}
@@ -253,7 +253,7 @@ class Gallery extends MusicBeatState
 			persistentUpdate = false;
 			persistentDraw = false;
 			FlxFlicker.stopFlickering(weekTexts.members[curSelected]);
-			openSubState(new GallerySubState(weekImages2[curSelected]));
+			openSubState(new GallerySubState(images[curSelected]));
 		});
 	}
 
