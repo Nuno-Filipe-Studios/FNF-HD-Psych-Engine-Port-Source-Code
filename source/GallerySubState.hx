@@ -28,7 +28,7 @@ class GallerySubState extends MusicBeatSubstate
 		images = _images;
 		trace(images);
 
-		colorBG = new FlxSprite(-2700,-1500).makeGraphic(FlxG.width * 6, FlxG.height * 6 );
+		colorBG = new FlxSprite(-2700, -1500).makeGraphic(FlxG.width * 6, FlxG.height * 6 );
 		colorBG.scrollFactor.set(0,0);
 		add(colorBG);
 

@@ -21,14 +21,7 @@ using StringTools;
 class Gallery extends MusicBeatState
 {
 	var weeks:Array<String> = ['week1', 'week2', 'week3', 'week4', 'week7', 'weekC'];
-	var weekImages:Array<Dynamic> = [
-		['bf', 'gf', 'dad'],
-		['skump', 'monster', 'void'],
-		['pico', 'darnell', 'nene'],
-		['void', 'mom', 'void'],
-		['void', 'sonic', 'void'],
-		['void', 'carol', 'void']
-	];
+	var images:Array<GalleryMetadata> = [];
 	var weekImages2:Array<Dynamic> = [
 		['bf', 'gf', 'dad'],
 		['skump', 'monster'],
@@ -54,11 +47,35 @@ class Gallery extends MusicBeatState
 		isDebug = true;
 		#end
 
+		GalleryData.reloadGalleryFiles();
+
+		for (i in 0...GalleryData.galleryList.length) {
+			var leStuff:GalleryData = GalleryData.imagesLoaded.get(GalleryData.galleryList[i]);
+			var leImages:Array<String> = [];
+
+			for (j in 0...leStuff.images.length)
+			{
+				leImages.push(leStuff.images[j][0]);
+			}
+
+			GalleryData.setDirectoryFromWeek(leStuff);
+			for (image in leStuff.images)
+			{
+				var colors:Array<Int> = image[1];
+				if(colors == null || colors.length < 3)
+				{
+					colors = [79, 88, 151];
+				}
+				addStuff(image[0], i, FlxColor.fromRGB(colors[0], colors[1], colors[2]));
+			}
+		}
+		GalleryData.loadTheFirstEnabledMod();
+
 		shit = new FlxObject(0, 0, 1, 1);
 
 		Conductor.changeBPM(95);
 		FlxG.sound.playMusic(Paths.music('gallery'), 1);
-		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720,FlxColor.fromRGB(69, 108, 207),false);
+		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720, FlxColor.fromRGB(69, 108, 207), false);
 		add(bg);
 
 		/*checkers = new FlxBackdrop(Paths.image('gallery/checkers'), 0, 0, true, true, 0, 0);
@@ -88,20 +105,24 @@ class Gallery extends MusicBeatState
 		logoBl.setGraphicSize(Std.int(logoBl.width * 0.5));
 		logoBl.updateHitbox();
 		add(logoBl);
-	
-		for (i in 0...weeks.length) {
-			var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + weeks[i]));
-			weekText.antialiasing = ClientPrefs.globalAntialiasing;
-			weekText.ID = i;
-			weekText.setGraphicSize(Std.int(weekText.width * 0.7));
-			weekTexts.add(weekText);
+
+		for (i in 0...GalleryData.galleryList.length) {
+			var leStuff:GalleryData = GalleryData.imagesLoaded.get(GalleryData.galleryList[i]);
+
+			for (j in 0...leStuff.weekImage) {
+				var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + weekImage[j]));
+				weekText.antialiasing = ClientPrefs.globalAntialiasing;
+				weekText.ID = i;
+				weekText.setGraphicSize(Std.int(weekText.width * 0.7));
+				weekTexts.add(weekText);
+			}
 		}
 
 		artSprites = new FlxTypedGroup<FlxSprite>();
 		add(artSprites);
 
-		for (i in 0...weekImages[0].length) {
-			art = new FlxSprite(80 +(400 * i), 150).loadGraphic(Paths.image('gallery/art/' + weekImages[0][i]));
+		for (i in 0...images[0].length) {
+			art = new FlxSprite(80 + (400 * i), 150).loadGraphic(Paths.image('gallery/art/' + images[0][i]));
 			art.setGraphicSize(Std.int(art.width * 0.15));
 			art.updateHitbox();
 			art.antialiasing = ClientPrefs.globalAntialiasing;
@@ -209,15 +230,20 @@ class Gallery extends MusicBeatState
 				});
 			}
 		}
-		artSprites.members[0].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][0]));
-		artSprites.members[1].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][1]));
-		artSprites.members[2].loadGraphic(Paths.image('gallery/art/' + weekImages[curSelected][2]));
+		artSprites.members[0].loadGraphic(Paths.image('gallery/art/' + images[curSelected][0]));
+		artSprites.members[1].loadGraphic(Paths.image('gallery/art/' + images[curSelected][1]));
+		artSprites.members[2].loadGraphic(Paths.image('gallery/art/' + images[curSelected][2]));
 	}
 
 	override function beatHit()
 	{
 		super.beatHit();
 		logoBl.animation.play('bump', true);
+	}
+
+	public function addStuff(image:String, weekNum:Int, color:Int)
+	{
+		songs.push(new GalleryMetadata(image, weekNum, color));
 	}
 
 	function selectWeek(selection:Int) {
@@ -239,5 +265,22 @@ class Gallery extends MusicBeatState
 		stopspamming = false;
 
 		super.closeSubState();
+	}
+}
+
+class GalleryMetadata
+{
+	public var art:String = "";
+	public var weekNum:Int = 0;
+	public var color:Int = -7179779;
+	public var folder:String = "";
+
+	public function new(image:String, weekNum:Int, color:Int)
+	{
+		this.art = image;
+		this.weekNum = weekNum;
+		this.color = color;
+		this.folder = Paths.currentModDirectory;
+		if(this.folder == null) this.folder = '';
 	}
 }
