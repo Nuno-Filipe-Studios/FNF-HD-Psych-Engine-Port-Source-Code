@@ -105,13 +105,13 @@ class GalleryData
 			for (j in 0...directories.length) {
 				var fileToCheck:String = directories[j] + 'gallery/' + sexList[i] + '.json';
 				if(!imagesLoaded.exists(sexList[i])) {
-					var week:WeekFile = getWeekFile(fileToCheck);
-					if(week != null) {
-						var weekFile:GalleryData = new GalleryData(week, sexList[i]);
+					var stuff:GalleryFile = getGalleryFile(fileToCheck);
+					if(stuff != null) {
+						var galleryFile:GalleryData = new GalleryData(stuff, sexList[i]);
 
 						#if MODS_ALLOWED
 						if(j >= originalLength) {
-							weekFile.folder = directories[j].substring(Paths.mods().length, directories[j].length-1);
+							galleryFile.folder = directories[j].substring(Paths.mods().length, directories[j].length-1);
 						}
 						#end
 					}
@@ -121,15 +121,15 @@ class GalleryData
 
 		#if MODS_ALLOWED
 		for (i in 0...directories.length) {
-			var directory:String = directories[i] + 'weeks/';
+			var directory:String = directories[i] + 'gallery/';
 			if(FileSystem.exists(directory)) {
-				var listOfWeeks:Array<String> = CoolUtil.coolTextFile(directory + 'weekList.txt');
-				for (daWeek in listOfWeeks)
+				var listOfStuff:Array<String> = CoolUtil.coolTextFile(directory + 'galleryList.txt');
+				for (daStuff in listOfStuff)
 				{
-					var path:String = directory + daWeek + '.json';
+					var path:String = directory + daStuff + '.json';
 					if(sys.FileSystem.exists(path))
 					{
-						addWeek(daWeek, path, directories[i], i, originalLength);
+						addStuff(daStuff, path, directories[i], i, originalLength);
 					}
 				}
 
@@ -138,7 +138,7 @@ class GalleryData
 					var path = haxe.io.Path.join([directory, file]);
 					if (!sys.FileSystem.isDirectory(path) && file.endsWith('.json'))
 					{
-						addWeek(file.substr(0, file.length - 5), path, directories[i], i, originalLength);
+						addStuff(file.substr(0, file.length - 5), path, directories[i], i, originalLength);
 					}
 				}
 			}
@@ -146,30 +146,28 @@ class GalleryData
 		#end
 	}
 
-	private static function addWeek(weekToCheck:String, path:String, directory:String, i:Int, originalLength:Int)
+	private static function addStuff(fileToCheck:String, path:String, directory:String, i:Int, originalLength:Int)
 	{
-		if(!weeksLoaded.exists(weekToCheck))
+		if(!imagesLoaded.exists(fileToCheck))
 		{
-			var week:WeekFile = getWeekFile(path);
-			if(week != null)
+			var stuff:GalleryFile = getGalleryFile(path);
+			if(stuff != null)
 			{
-				var weekFile:WeekData = new WeekData(week, weekToCheck);
+				var galleryFile:GalleryData = new GalleryData(stuff, fileToCheck);
 				if(i >= originalLength)
 				{
 					#if MODS_ALLOWED
-					weekFile.folder = directory.substring(Paths.mods().length, directory.length-1);
+					galleryFile.folder = directory.substring(Paths.mods().length, directory.length-1);
 					#end
 				}
-				if((PlayState.isStoryMode && !weekFile.hideStoryMode) || (!PlayState.isStoryMode && !weekFile.hideFreeplay))
-				{
-					weeksLoaded.set(weekToCheck, weekFile);
-					weeksList.push(weekToCheck);
-				}
+
+				imagesLoaded.set(fileToCheck, galleryFile);
+				imagesList.push(fileToCheck);
 			}
 		}
 	}
 
-	private static function getWeekFile(path:String):WeekFile {
+	private static function getGalleryFile(path:String):GalleryFile {
 		var rawJson:String = null;
 		#if MODS_ALLOWED
 		if(FileSystem.exists(path)) {
@@ -190,13 +188,13 @@ class GalleryData
 	//   FUNCTIONS YOU WILL PROBABLY NEVER NEED TO USE
 
 	//To use on PlayState.hx or Highscore stuff
-	public static function getWeekFileName():String {
-		return weeksList[PlayState.storyWeek];
+	public static function getGalleryFileName():String {
+		return imagesList[PlayState.storyWeek];
 	}
 
 	//Used on LoadingState, nothing really too relevant
-	public static function getCurrentWeek():WeekData {
-		return weeksLoaded.get(weeksList[PlayState.storyWeek]);
+	public static function getCurrentStuff():GalleryData {
+		return imagesLoaded.get(imagesList[PlayState.storyWeek]);
 	}
 
 	public static function setDirectoryFromGallery(?data:GalleryData = null) {
