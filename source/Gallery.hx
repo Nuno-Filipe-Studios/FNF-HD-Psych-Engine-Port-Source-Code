@@ -14,6 +14,9 @@ import flixel.effects.FlxFlicker;
 import lime.utils.AssetCache;
 import flixel.util.FlxTimer;
 import flixel.FlxObject;
+import GalleryData;
+
+using StringTools;
 
 class Gallery extends MusicBeatState
 {
@@ -47,7 +50,6 @@ class Gallery extends MusicBeatState
 	private var shit:FlxObject;
 	override function create()
 	{
-
 		#if debug
 		isDebug = true;
 		#end

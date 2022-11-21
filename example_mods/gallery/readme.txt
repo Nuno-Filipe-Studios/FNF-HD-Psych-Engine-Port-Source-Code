@@ -1,0 +1,1 @@
+Drop your custom gallery .json files here!
