@@ -49,8 +49,8 @@ class Gallery extends MusicBeatState
 
 		GalleryData.reloadGalleryFiles();
 
-		for (i in 0...GalleryData.galleryList.length) {
-			var leStuff:GalleryData = GalleryData.imagesLoaded.get(GalleryData.galleryList[i]);
+		for (i in 0...GalleryData.imagesList.length) {
+			var leStuff:GalleryData = GalleryData.imagesLoaded.get(GalleryData.imagesList[i]);
 			var leImages:Array<String> = [];
 
 			for (j in 0...leStuff.images.length)
@@ -58,7 +58,7 @@ class Gallery extends MusicBeatState
 				leImages.push(leStuff.images[j][0]);
 			}
 
-			GalleryData.setDirectoryFromWeek(leStuff);
+			GalleryData.setDirectoryFromGallery(leStuff);
 			for (image in leStuff.images)
 			{
 				var colors:Array<Int> = image[1];
@@ -106,16 +106,14 @@ class Gallery extends MusicBeatState
 		logoBl.updateHitbox();
 		add(logoBl);
 
-		for (i in 0...GalleryData.galleryList.length) {
-			var leStuff:GalleryData = GalleryData.imagesLoaded.get(GalleryData.galleryList[i]);
+		for (i in 0...GalleryData.imagesList.length) {
+			var leStuff:GalleryData = GalleryData.imagesLoaded.get(GalleryData.imagesList[i]);
 
-			for (j in 0...leStuff.weekImage) {
-				var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + weekImage[j]));
-				weekText.antialiasing = ClientPrefs.globalAntialiasing;
-				weekText.ID = j;
-				weekText.setGraphicSize(Std.int(weekText.width * 0.7));
-				weekTexts.add(weekText);
-			}
+			var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + leStuff.weekImage[i]));
+			weekText.antialiasing = ClientPrefs.globalAntialiasing;
+			weekText.ID = j;
+			weekText.setGraphicSize(Std.int(weekText.width * 0.7));
+			weekTexts.add(weekText);
 		}
 
 		artSprites = new FlxTypedGroup<FlxSprite>();
@@ -243,7 +241,7 @@ class Gallery extends MusicBeatState
 
 	public function addStuff(image:String, weekNum:Int, color:Int)
 	{
-		songs.push(new GalleryMetadata(image, weekNum, color));
+		images.push(new GalleryMetadata(image, weekNum, color));
 	}
 
 	function selectWeek(selection:Int) {
