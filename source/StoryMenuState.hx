@@ -442,7 +442,7 @@ class StoryMenuState extends MusicBeatState
 		}
 
 		var playSynth:Bool = leWeek.playSynth;
-		if(playSynth != null && !playSynth) {
+		if(!playSynth) {
 			synth.volume = 0;
 		} else {
 			synth.volume = 1;
