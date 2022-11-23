@@ -484,6 +484,17 @@ class WeekEditorState extends MusicBeatState
 		else
 			synth.volume = 0;
 
+		if(weekSongInputText.text != null) {
+			drums.loadEmbedded(Paths.music(weekSongInputText.text), true);
+			drums.volume = 0;
+			drums.play();
+			drums.fadeIn(0.5);
+			drums.time = synth.time;
+		} else {
+			drums.volume = 0;
+			drums.fadeIn(0);
+		}
+
 		super.update(elapsed);
 
 		lock.y = weekThing.y;
