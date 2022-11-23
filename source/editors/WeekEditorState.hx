@@ -236,7 +236,7 @@ class WeekEditorState extends MusicBeatState
 
 	var weekBeforeInputText:FlxUIInputText;
 	var difficultiesInputText:FlxUIInputText;
-	var weekSongInputText:FlxUIInputText;
+	var storySongInputText:FlxUIInputText;
 	var playSynthCheckbox:FlxUICheckBox;
 	var lockedCheckbox:FlxUICheckBox;
 	var hiddenUntilUnlockCheckbox:FlxUICheckBox;
@@ -272,17 +272,17 @@ class WeekEditorState extends MusicBeatState
 			weekFile.playSynth = playSynthCheckbox.checked;
 		};
 
-		weekSongInputText = new FlxUIInputText(10, playSynthCheckbox.y + 60, 200, '', 8);
-		blockPressWhileTypingOn.push(weekSongInputText);
+		storySongInputText = new FlxUIInputText(10, playSynthCheckbox.y + 60, 200, '', 8);
+		blockPressWhileTypingOn.push(storySongInputText);
 
 		tab_group.add(new FlxText(weekBeforeInputText.x, weekBeforeInputText.y - 28, 0, 'Week File name of the Week you have\nto finish for Unlocking:'));
 		tab_group.add(new FlxText(difficultiesInputText.x, difficultiesInputText.y - 20, 0, 'Difficulties:'));
 		tab_group.add(new FlxText(difficultiesInputText.x, difficultiesInputText.y + 20, 0, 'Default difficulties are "Easy, Normal, Hard"\nwithout quotes.'));
-		tab_group.add(new FlxText(weekSongInputText.x, weekSongInputText.y - 20, 0, 'Week Song:'));
-		tab_group.add(new FlxText(weekSongInputText.x, weekSongInputText.y + 20, 0, 'The Song that plays when hovering over the week.\nIf empty, it stays silent'));
+		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y - 20, 0, 'Story Song:'));
+		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y + 20, 0, 'The Song that plays when hovering over the week.\nIf empty, it stays silent'));
 		tab_group.add(weekBeforeInputText);
 		tab_group.add(difficultiesInputText);
-		tab_group.add(weekSongInputText);
+		tab_group.add(storySongInputText);
 		tab_group.add(playSynthCheckbox);
 		tab_group.add(hiddenUntilUnlockCheckbox);
 		tab_group.add(lockedCheckbox);
@@ -312,8 +312,8 @@ class WeekEditorState extends MusicBeatState
 		difficultiesInputText.text = '';
 		if(weekFile.difficulties != null) difficultiesInputText.text = weekFile.difficulties;
 
-		weekSongInputText.text = '';
-		if(weekFile.weekSong != null) weekSongInputText.text = weekFile.weekSong;
+		storySongInputText.text = '';
+		if(weekFile.weekSong != null) storySongInputText.text = weekFile.storySong;
 
 		lockedCheckbox.checked = !weekFile.startUnlocked;
 		lock.visible = lockedCheckbox.checked;
