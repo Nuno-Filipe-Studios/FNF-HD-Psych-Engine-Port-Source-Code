@@ -313,7 +313,7 @@ class WeekEditorState extends MusicBeatState
 		if(weekFile.difficulties != null) difficultiesInputText.text = weekFile.difficulties;
 
 		storySongInputText.text = '';
-		if(weekFile.weekSong != null) storySongInputText.text = weekFile.storySong;
+		if(weekFile.storySong != null) storySongInputText.text = weekFile.storySong;
 
 		lockedCheckbox.checked = !weekFile.startUnlocked;
 		lock.visible = lockedCheckbox.checked;
@@ -484,8 +484,8 @@ class WeekEditorState extends MusicBeatState
 		else
 			synth.volume = 0;
 
-		if(weekSongInputText.text != null) {
-			drums.loadEmbedded(Paths.music(weekSongInputText.text), true);
+		if(storySongInputText.text != null) {
+			drums.loadEmbedded(Paths.music(storySongInputText.text), true);
 			drums.volume = 0;
 			drums.play();
 			drums.fadeIn(0.5);
