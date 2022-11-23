@@ -60,7 +60,7 @@ class WeekData {
 			weekBackground: 'stage',
 			weekBefore: 'tutorial',
 			storyName: 'Your New Week',
-			storySong: 'drumloop_0',
+			storySong: 'drumloop0',
 			playSynth: true,
 			weekName: 'Custom Week',
 			freeplayColor: [146, 113, 253],
