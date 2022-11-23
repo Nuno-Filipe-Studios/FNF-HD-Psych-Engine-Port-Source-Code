@@ -129,15 +129,20 @@ class StoryMenuState extends MusicBeatState
 					grpLocks.add(lock);
 				}
 				num++;
-
-				CoolUtil.precacheMusic('drumloop' + i);
 			}
 		}
 
-		for(i in 0...8){
+		var leWeek:WeekData = loadedWeeks[curWeek];
+		WeekData.setDirectoryFromWeek(leWeek);
+
+		var storySong:String = leWeek.storySong;
+		CoolUtil.precacheMusic(storySong);
+
+		for (i in 0...8) {
+			CoolUtil.precacheMusic('drumloop' + i);
 		}
 
-		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'),true);
+		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'), true);
 		drums = new FlxSound();
 		synth.play();
 		FlxG.sound.list.add(drums);
