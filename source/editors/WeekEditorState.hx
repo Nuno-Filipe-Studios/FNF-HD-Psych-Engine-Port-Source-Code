@@ -266,7 +266,7 @@ class WeekEditorState extends MusicBeatState
 		difficultiesInputText = new FlxUIInputText(10, weekBeforeInputText.y + 60, 200, '', 8);
 		blockPressWhileTypingOn.push(difficultiesInputText);
 
-		playSynthCheckbox = new FlxUICheckBox(10, 30, null, null, "Play Synth", 100);
+		playSynthCheckbox = new FlxUICheckBox(10, difficultiesInputText.y + 55, null, null, "Play Synth", 100);
 		playSynthCheckbox.callback = function()
 		{
 			weekFile.playSynth = playSynthCheckbox.checked;
@@ -479,12 +479,17 @@ class WeekEditorState extends MusicBeatState
 			}
 		}
 
+		super.update(elapsed);
+
+		lock.y = weekThing.y;
+		missingFileText.y = weekThing.y + 36;
+
 		if(playSynthCheckbox.checked)
 			synth.volume = 1;
 		else
 			synth.volume = 0;
 
-		if(storySongInputText.text != null) {
+		if(storySongInputText.text != null && Paths.fileExists('music/' + storySongInputText.text, MUSIC)) {
 			drums.loadEmbedded(Paths.music(storySongInputText.text), true);
 			drums.volume = 0;
 			drums.play();
@@ -494,11 +499,6 @@ class WeekEditorState extends MusicBeatState
 			drums.volume = 0;
 			drums.fadeIn(0);
 		}
-
-		super.update(elapsed);
-
-		lock.y = weekThing.y;
-		missingFileText.y = weekThing.y + 36;
 	}
 
 	function recalculateStuffPosition() {
