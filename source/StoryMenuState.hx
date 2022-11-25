@@ -138,10 +138,6 @@ class StoryMenuState extends MusicBeatState
 		var storySong:String = leWeek.storySong;
 		CoolUtil.precacheMusic(storySong);
 
-		for (i in 0...8) {
-			CoolUtil.precacheMusic('drumloop' + i);
-		}
-
 		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'), true);
 		drums = new FlxSound();
 		synth.play();
