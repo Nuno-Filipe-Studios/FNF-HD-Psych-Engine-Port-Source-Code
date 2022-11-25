@@ -443,6 +443,18 @@ class WeekEditorState extends MusicBeatState
 				weekFile.weekBefore = weekBeforeInputText.text.trim();
 			} else if(sender == difficultiesInputText) {
 				weekFile.difficulties = difficultiesInputText.text.trim();
+			} else if(sender == storySongInputText) {
+				weekFile.difficulties = storySongInputText.text.trim();
+				if(storySongInputText.text != null && Paths.fileExists('music/' + storySongInputText.text, MUSIC)) {
+					drums.loadEmbedded(Paths.music(storySongInputText.text), true);
+					drums.volume = 0;
+					drums.play();
+					drums.fadeIn(0.5);
+					drums.time = synth.time;
+				} else {
+					drums.volume = 0;
+					drums.fadeIn(0);
+				}
 			}
 		}
 	}
@@ -488,17 +500,6 @@ class WeekEditorState extends MusicBeatState
 			synth.volume = 1;
 		else
 			synth.volume = 0;
-
-		if(storySongInputText.text != null && Paths.fileExists('music/' + storySongInputText.text, MUSIC)) {
-			drums.loadEmbedded(Paths.music(storySongInputText.text), true);
-			drums.volume = 0;
-			drums.play();
-			drums.fadeIn(0.5);
-			drums.time = synth.time;
-		} else {
-			drums.volume = 0;
-			drums.fadeIn(0);
-		}
 	}
 
 	function recalculateStuffPosition() {
