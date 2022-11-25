@@ -276,7 +276,7 @@ class WeekEditorState extends MusicBeatState
 		tab_group.add(new FlxText(difficultiesInputText.x, difficultiesInputText.y - 20, 0, 'Difficulties:'));
 		tab_group.add(new FlxText(difficultiesInputText.x, difficultiesInputText.y + 20, 0, 'Default difficulties are "Easy, Normal, Hard"\nwithout quotes.'));
 		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y - 20, 0, 'Story Song:'));
-		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y + 20, 0, 'Plays when hovering over the week.\nIf empty, stays silent.\nPress enter for preview.'));
+		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y + 20, 0, 'Plays when hovering over the week.\nIf empty, stays silent.'));
 		tab_group.add(weekBeforeInputText);
 		tab_group.add(difficultiesInputText);
 		tab_group.add(storySongInputText);
