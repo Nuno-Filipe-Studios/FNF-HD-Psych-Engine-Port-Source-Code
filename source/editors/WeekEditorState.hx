@@ -46,7 +46,6 @@ class WeekEditorState extends MusicBeatState
 	var missingFileText:FlxText;
 
 	var synth:FlxSound;
-	public var drums:FlxSound;
 
 	var weekFile:WeekFile = null;
 	public function new(weekFile:WeekFile = null)
@@ -114,9 +113,7 @@ class WeekEditorState extends MusicBeatState
 		add(txtWeekTitle);
 
 		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'), true);
-		drums = new FlxSound();
 		synth.play();
-		FlxG.sound.list.add(drums);
 		FlxG.sound.list.add(synth);
 
 		addEditorBox();
@@ -266,20 +263,20 @@ class WeekEditorState extends MusicBeatState
 		difficultiesInputText = new FlxUIInputText(10, weekBeforeInputText.y + 60, 200, '', 8);
 		blockPressWhileTypingOn.push(difficultiesInputText);
 
-		playSynthCheckbox = new FlxUICheckBox(10, difficultiesInputText.y + 55, null, null, "Play Synth", 100);
+		playSynthCheckbox = new FlxUICheckBox(10, difficultiesInputText.y + 60, null, null, "Play Synth", 100);
 		playSynthCheckbox.callback = function()
 		{
 			weekFile.playSynth = playSynthCheckbox.checked;
 		};
 
-		storySongInputText = new FlxUIInputText(10, playSynthCheckbox.y + 60, 200, '', 8);
+		storySongInputText = new FlxUIInputText(10, playSynthCheckbox.y + 40, 200, '', 8);
 		blockPressWhileTypingOn.push(storySongInputText);
 
 		tab_group.add(new FlxText(weekBeforeInputText.x, weekBeforeInputText.y - 28, 0, 'Week File name of the Week you have\nto finish for Unlocking:'));
 		tab_group.add(new FlxText(difficultiesInputText.x, difficultiesInputText.y - 20, 0, 'Difficulties:'));
 		tab_group.add(new FlxText(difficultiesInputText.x, difficultiesInputText.y + 20, 0, 'Default difficulties are "Easy, Normal, Hard"\nwithout quotes.'));
 		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y - 20, 0, 'Story Song:'));
-		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y + 20, 0, 'The Song that plays when hovering over the week.\nIf empty, it stays silent'));
+		tab_group.add(new FlxText(storySongInputText.x, storySongInputText.y + 20, 0, 'Plays when hovering over the week.\nIf empty, stays silent.\nPress enter for preview.'));
 		tab_group.add(weekBeforeInputText);
 		tab_group.add(difficultiesInputText);
 		tab_group.add(storySongInputText);
@@ -445,16 +442,6 @@ class WeekEditorState extends MusicBeatState
 				weekFile.difficulties = difficultiesInputText.text.trim();
 			} else if(sender == storySongInputText) {
 				weekFile.difficulties = storySongInputText.text.trim();
-				if(storySongInputText.text != null && Paths.fileExists('music/' + storySongInputText.text, MUSIC)) {
-					drums.loadEmbedded(Paths.music(storySongInputText.text), true);
-					drums.volume = 0;
-					drums.play();
-					drums.fadeIn(0.5);
-					drums.time = synth.time;
-				} else {
-					drums.volume = 0;
-					drums.fadeIn(0);
-				}
 			}
 		}
 	}
