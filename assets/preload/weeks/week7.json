@@ -1,5 +1,7 @@
 {
 	"storyName": "sonic week",
+	"storySong": "drumloop7",
+	"playSynth": true,
 	"difficulties": "hard",
 	"hideFreeplay": false,
 	"weekBackground": "weekSonic",

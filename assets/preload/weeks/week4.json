@@ -1,5 +1,7 @@
 {
 	"storyName": "MOMMY MUST MURDER",
+	"storySong": "drumloop4",
+	"playSynth": true,
 	"hideFreeplay": false,
 	"weekBackground": "week4",
 	"weekBefore": "week3",

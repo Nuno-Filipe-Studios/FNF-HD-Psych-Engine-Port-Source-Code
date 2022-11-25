@@ -1,5 +1,7 @@
 {
 	"storyName": "Daddy Dearest",
+	"storySong": "drumloop1",
+	"playSynth": true,
 	"hideFreeplay": false,
 	"weekBackground": "week1",
 	"weekBefore": "tutorial",
