@@ -424,10 +424,7 @@ class StoryMenuState extends MusicBeatState
 
 		var storySong:String = leWeek.storySong;
 		if(curWeek > 0) {
-			if(storySong != null)
-				drums.loadEmbedded(Paths.music(storySong), true);
-			else
-				drums.loadEmbedded(Paths.music('drumloop' + curWeek), true);
+			drums.loadEmbedded(Paths.music(storySong), true);
 			drums.volume = 0;
 			drums.play();
 			drums.fadeIn(0.5);
