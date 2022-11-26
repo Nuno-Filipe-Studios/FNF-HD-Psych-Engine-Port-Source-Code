@@ -22,7 +22,7 @@ class SecretMenuState extends MusicBeatState
 
 	var weekImages:Array<Dynamic> =[
 		['void', 'bf', 'void'],
-		['void','pico', 'void'],
+		['void', 'pico', 'void'],
 	];
 	var weekTexts:FlxTypedGroup<FlxSprite>;
 	var selectionBG:FlxTypedGroup<FlxSprite>;
@@ -46,11 +46,10 @@ class SecretMenuState extends MusicBeatState
 	private var shit:FlxObject;
 	override function create()
 	{
-
 		#if debug
 		isDebug = true;
 		#end
-		
+
 		shit = new FlxObject(0, 0, 1, 1);
 
 		Conductor.changeBPM(95);
@@ -127,7 +126,7 @@ class SecretMenuState extends MusicBeatState
 		blackBG.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.BLACK);
 		blackBG.visible = false;
 		add(blackBG);
-	
+
 		for (i in 0...weeks.length){
 			var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + weeks[i]));
 			weekText.antialiasing = ClientPrefs.globalAntialiasing;
@@ -153,16 +152,17 @@ class SecretMenuState extends MusicBeatState
 		super.create();
 	}
 
-	override public function update(elapsed:Float){
-	
+	override public function update(elapsed:Float) {
 		if (controls.UI_RIGHT_P && canSelect)
 			changeCharacter(1);
 		if (controls.UI_LEFT_P && canSelect)
 			changeCharacter(-1);
+
 		if (controls.UI_RIGHT)
 			rightArrow.animation.play('press')
 		else
 			rightArrow.animation.play('idle');
+
 		if (controls.UI_LEFT)
 			leftArrow.animation.play('press');
 		else
@@ -173,6 +173,7 @@ class SecretMenuState extends MusicBeatState
 			stopspamming = true;
 			canSelect = false;
 		}
+
 		if (controls.BACK) {
 			checkers.velocity.set(0, 0);
 			stopspamming = true;
