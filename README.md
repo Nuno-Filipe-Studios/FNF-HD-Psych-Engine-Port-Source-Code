@@ -2,7 +2,7 @@
 Welcome to FNF HD psych engine port, this port was made for having a better experience playing FNF HD, in this port there's new options, new art and more! Remember i'm not the owner of FNF HD, FNF HD is made by Kolsan and the HD team, full credits to them and their hard work.
 
 ## Installation:
-You must have Haxe 4.1.5 (https://haxe.org/download/version/4.1.5/).
+You must have Haxe 4.2.5 (https://haxe.org/download/version/4.2.5/).
 
 Follow a Friday Night Funkin' Psych Engine source code compilation tutorial, after this you will need to install LuaJIT.
 
