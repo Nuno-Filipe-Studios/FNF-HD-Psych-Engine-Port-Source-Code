@@ -19,6 +19,8 @@ typedef WeekFile =
 	var weekBackground:String;
 	var weekBefore:String;
 	var storyName:String;
+	var storySong:String;
+	var playSynth:Bool;
 	var weekName:String;
 	var freeplayColor:Array<Int>;
 	var startUnlocked:Bool;
@@ -39,6 +41,8 @@ class WeekData {
 	public var weekBackground:String;
 	public var weekBefore:String;
 	public var storyName:String;
+	public var storySong:String;
+	public var playSynth:Bool;
 	public var weekName:String;
 	public var freeplayColor:Array<Int>;
 	public var startUnlocked:Bool;
@@ -56,6 +60,8 @@ class WeekData {
 			weekBackground: 'stage',
 			weekBefore: 'tutorial',
 			storyName: 'Your New Week',
+			storySong: 'drumloop0',
+			playSynth: true,
 			weekName: 'Custom Week',
 			freeplayColor: [146, 113, 253],
 			startUnlocked: true,
@@ -74,6 +80,8 @@ class WeekData {
 		weekBackground = weekFile.weekBackground;
 		weekBefore = weekFile.weekBefore;
 		storyName = weekFile.storyName;
+		storySong = weekFile.storySong;
+		playSynth = weekFile.playSynth;
 		weekName = weekFile.weekName;
 		freeplayColor = weekFile.freeplayColor;
 		startUnlocked = weekFile.startUnlocked;

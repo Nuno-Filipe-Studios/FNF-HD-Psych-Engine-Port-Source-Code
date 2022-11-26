@@ -1,5 +1,7 @@
 {
 	"storyName": "Spooky Month",
+	"storySong": "drumloop2",
+	"playSynth": true,
 	"hideFreeplay": false,
 	"weekBackground": "week2",
 	"weekBefore": "week1",

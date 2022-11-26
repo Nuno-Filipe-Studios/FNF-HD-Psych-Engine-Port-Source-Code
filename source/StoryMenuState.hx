@@ -37,7 +37,7 @@ class StoryMenuState extends MusicBeatState
 	public static var curWeek:Int = 0;
 
 	var synth:FlxSound;
-	var drums:FlxSound;
+	public var drums:FlxSound;
 	var txtTracklist:FlxText;
 
 	var grpWeekText:FlxTypedGroup<MenuItem>;
@@ -56,16 +56,6 @@ class StoryMenuState extends MusicBeatState
 	{
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
-
-		for(i in 0...8){
-			CoolUtil.precacheMusic('drumloop' + i);
-		}
-
-		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'),true);
-		drums = new FlxSound();
-		synth.play();
-		FlxG.sound.list.add(drums);
-		FlxG.sound.list.add(synth);
 
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
@@ -141,6 +131,18 @@ class StoryMenuState extends MusicBeatState
 				num++;
 			}
 		}
+
+		var leWeek:WeekData = loadedWeeks[curWeek];
+		WeekData.setDirectoryFromWeek(leWeek);
+
+		var storySong:String = leWeek.storySong;
+		CoolUtil.precacheMusic(storySong);
+
+		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'), true);
+		drums = new FlxSound();
+		synth.play();
+		FlxG.sound.list.add(drums);
+		FlxG.sound.list.add(synth);
 
 		WeekData.setDirectoryFromWeek(loadedWeeks[0]);
 		var charArray:Array<String> = loadedWeeks[0].weekCharacters;
@@ -417,27 +419,27 @@ class StoryMenuState extends MusicBeatState
 		if (curWeek < 0)
 			curWeek = loadedWeeks.length - 1;
 
-		if(curWeek > 0){
-			drums.loadEmbedded(Paths.music('drumloop' + curWeek),true);
+		var leWeek:WeekData = loadedWeeks[curWeek];
+		WeekData.setDirectoryFromWeek(leWeek);
+
+		var storySong:String = leWeek.storySong;
+		if(curWeek > 0) {
+			drums.loadEmbedded(Paths.music(storySong), true);
 			drums.volume = 0;
 			drums.play();
 			drums.fadeIn(0.5);
 			drums.time = synth.time;
-		}
-		else {
+		} else {
 			drums.volume = 0;
 			drums.fadeIn(0);
 		}
 
-		if(curWeek > 7) {
+		var playSynth:Bool = leWeek.playSynth;
+		if(!playSynth) {
 			synth.volume = 0;
-		}
-		else {
+		} else {
 			synth.volume = 1;
 		}
-
-		var leWeek:WeekData = loadedWeeks[curWeek];
-		WeekData.setDirectoryFromWeek(leWeek);
 
 		var leName:String = leWeek.storyName;
 		txtWeekTitle.text = leName.toUpperCase();

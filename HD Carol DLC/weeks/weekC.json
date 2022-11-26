@@ -1,5 +1,7 @@
 {
 	"storyName": "Carol",
+	"storySong": "carolDrumloop",
+	"playSynth": false,
 	"hideFreeplay": false,
 	"weekBackground": "weekC",
 	"weekBefore": "week7",

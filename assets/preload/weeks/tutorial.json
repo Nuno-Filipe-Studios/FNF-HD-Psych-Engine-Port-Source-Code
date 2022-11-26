@@ -1,5 +1,7 @@
 {
 	"storyName": "",
+	"storySong": "",
+	"playSynth": true,
 	"hideFreeplay": false,
 	"weekBackground": "week0",
 	"weekBefore": "tutorial",

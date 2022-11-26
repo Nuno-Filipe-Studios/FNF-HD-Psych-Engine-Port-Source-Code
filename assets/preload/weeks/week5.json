@@ -1,5 +1,7 @@
 {
 	"storyName": "RED SNOW",
+	"storySong": "drumloop5",
+	"playSynth": true,
 	"hideFreeplay": false,
 	"weekBackground": "week5",
 	"weekBefore": "week4",

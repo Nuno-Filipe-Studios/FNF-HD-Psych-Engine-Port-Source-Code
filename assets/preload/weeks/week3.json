@@ -1,5 +1,7 @@
 {
 	"storyName": "PICO",
+	"storySong": "drumloop3",
+	"playSynth": true,
 	"hideFreeplay": false,
 	"weekBackground": "week3",
 	"weekBefore": "week2",
