@@ -80,9 +80,13 @@ class Main extends Sprite
 			gameWidth = Math.ceil(stageWidth / zoom);
 			gameHeight = Math.ceil(stageHeight / zoom);
 		}
-	
+
 		ClientPrefs.loadDefaultKeys();
-		addChild(gameWidth, gameHeight, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate, skipSplash);
+
+		// here we set up the base game
+		var gameCreate:FlxGame;
+		gameCreate = new FlxGame(gameWidth, gameHeight, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate, skipSplash);
+		addChild(gameCreate); // and create it afterwards
 
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);
