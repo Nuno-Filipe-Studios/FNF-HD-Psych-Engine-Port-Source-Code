@@ -7,7 +7,7 @@ import flixel.text.FlxText;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.animation.FlxAnimation;
 import flixel.util.FlxColor;
-//import flixel.addons.display.FlxBackdrop;
+import flixel.addons.display.FlxBackdrop;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.effects.FlxFlicker;
@@ -22,12 +22,12 @@ class SecretMenuState extends MusicBeatState
 
 	var weekImages:Array<Dynamic> =[
 		['void', 'bf', 'void'],
-		['void','pico', 'void'],
+		['void', 'pico', 'void'],
 	];
 	var weekTexts:FlxTypedGroup<FlxSprite>;
 	var selectionBG:FlxTypedGroup<FlxSprite>;
 	var curSelected:Int = 0;
-	//var checkers:FlxBackdrop;
+	var checkers:FlxBackdrop;
 	var logoBl:FlxSprite;
 	var rightArrow:FlxSprite;
 	var leftArrow:FlxSprite;
@@ -46,22 +46,20 @@ class SecretMenuState extends MusicBeatState
 	private var shit:FlxObject;
 	override function create()
 	{
-
 		#if debug
 		isDebug = true;
 		#end
-		
+
 		shit = new FlxObject(0, 0, 1, 1);
 
 		Conductor.changeBPM(95);
 		FlxG.sound.playMusic(Paths.music('gallery'), 1);
-		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720,FlxColor.fromRGB(69, 108, 207), false);
+		var bg:FlxSprite = new FlxSprite(0, 0).makeGraphic(1280, 720, FlxColor.fromRGB(69, 108, 207), false);
 		add(bg);
 
-		/*checkers = new FlxBackdrop(Paths.image('gallery/checkers'), 0, 0, true, true, 0, 0);
-		checkers.velocity.x = 20;
-		checkers.velocity.y = 20;
-		add(checkers);*/
+		checkers = new FlxBackdrop(Paths.image('gallery/checkers'), XY, 0, 0);
+		checkers.velocity.set(20, 20);
+		add(checkers);
 
 		weekTexts = new FlxTypedGroup<FlxSprite>();
 		selectionBG = new FlxTypedGroup<FlxSprite>();
@@ -128,7 +126,7 @@ class SecretMenuState extends MusicBeatState
 		blackBG.makeGraphic(Std.int(FlxG.width * 3), Std.int(FlxG.height * 3), FlxColor.BLACK);
 		blackBG.visible = false;
 		add(blackBG);
-	
+
 		for (i in 0...weeks.length){
 			var weekText:FlxSprite = new FlxSprite(20 + (300 * i), 40).loadGraphic(Paths.image('storymenu/' + weeks[i]));
 			weekText.antialiasing = ClientPrefs.globalAntialiasing;
@@ -154,16 +152,17 @@ class SecretMenuState extends MusicBeatState
 		super.create();
 	}
 
-	override public function update(elapsed:Float){
-	
+	override public function update(elapsed:Float) {
 		if (controls.UI_RIGHT_P && canSelect)
 			changeCharacter(1);
 		if (controls.UI_LEFT_P && canSelect)
 			changeCharacter(-1);
+
 		if (controls.UI_RIGHT)
 			rightArrow.animation.play('press')
 		else
 			rightArrow.animation.play('idle');
+
 		if (controls.UI_LEFT)
 			leftArrow.animation.play('press');
 		else
@@ -174,9 +173,9 @@ class SecretMenuState extends MusicBeatState
 			stopspamming = true;
 			canSelect = false;
 		}
+
 		if (controls.BACK) {
-			/*checkers.velocity.x = 0;
-			checkers.velocity.y = 0;*/
+			checkers.velocity.set(0, 0);
 			stopspamming = true;
 			canSelect = false;
 			FlxG.sound.music.stop();
