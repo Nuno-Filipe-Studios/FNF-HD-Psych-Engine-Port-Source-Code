@@ -27,7 +27,6 @@ using StringTools;
 class FreeplayState extends MusicBeatState
 {
 	var songs:Array<SongMetadata> = [];
-	var beatArray:Array<Int> = [100,100,120,180,150,165,130,150,175,165,110,125,180];
 
 	var selector:FlxText;
 	var curSelected:Int = 0;
@@ -49,7 +48,21 @@ class FreeplayState extends MusicBeatState
 		320,332,340,352,358,364,372,
 		512,524,532,544,550,556,564,
 		576,588,596,608,614,620,628,
-		640,652,660,672,678,684,692
+		640,652,660,672,678,684,692,
+		704,716,724,736,742,748,756,
+		768,780,788,800,806,812,820,
+		832,844,852,864,870,876,884,
+		896,908,916,928,934,940,948,
+		960,972,980,992,998,1004,1012,
+		1024,1034,1040,1050,1056,1067,
+		1072,1078,1082,1088,1098,1104,
+		1114,1120,1030,1136,1142,1146,
+		1152,1162,1168,1178,1184,1194,
+		1200,1206,1210,1216,1226,1232,
+		1242,1248,1258,1264,1270,1274,
+		1280,1292,1300,1312,1318,1324,
+		1332,1344,1356,1364,1376,1382,
+		1388,1396
 	];
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
@@ -488,10 +501,10 @@ class FreeplayState extends MusicBeatState
 
 		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curPlaying)
 		{
-			if (curBeat >= 8)
+			if (curBeat >= 16)
 				FlxG.camera.zoom += 0.030;
 			//Sum extra detail
-			if (curBeat >= 168 && curBeat < 200)
+			if (curBeat >= 208 && curBeat < 272)
 				FlxG.camera.zoom += 0.060;
 		}
 
