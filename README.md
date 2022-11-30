@@ -42,3 +42,4 @@ otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 * DANIZIN - For making an Android Port
 * MaysLastPlay - For helping out with the Android Port
 * DMMaster 636 - For making good HD art and cool stuff for the port
+* Filipianosol - For optimizing the port
