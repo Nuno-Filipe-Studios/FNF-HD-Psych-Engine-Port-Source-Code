@@ -127,8 +127,13 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
 			//menuItem.screenCenter(X);
+			#if MODS_ALLOWED
 			menuItem.x += 10;
 			menuItem.y += -300;
+			#else
+			menuItem.x += 10;
+			menuItem.y += -170;
+			#end
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
