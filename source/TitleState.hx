@@ -48,6 +48,7 @@ typedef TitleData =
 	gfx:Float,
 	gfy:Float,
 	backgroundSprite:String,
+	showPsyLogo:Bool,
 	bpm:Int
 }
 
@@ -238,6 +239,7 @@ class TitleState extends MusicBeatState
 	}
 
 	var logoBl:FlxSprite;
+	var logoPsy:FlxSprite;
 	var gfDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
@@ -303,6 +305,14 @@ class TitleState extends MusicBeatState
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
+		logoPsy = new FlxSprite(logoBl.x + 150, logoBl.y + 370);
+		logoPsy.frames = Paths.getSparrowAtlas('logoPsych');
+		logoPsy.antialiasing = ClientPrefs.globalAntialiasing;
+		logoPsy.animation.addByPrefix('idle', 'idle', 24, true);
+		logoPsy.animation.play('idle');
+		logoPsy.updateHitbox();
+		logoPsy.visible = titleJSON.showPsyLogo;
+
 		swagShader = new ColorSwap();
 		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
 
@@ -354,6 +364,8 @@ class TitleState extends MusicBeatState
 		gfDance.shader = swagShader.shader;
 		add(logoBl);
 		logoBl.shader = swagShader.shader;
+		add(logoPsy);
+		logoPsy.shader = swagShader.shader;
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
 		#if (desktop && MODS_ALLOWED)
@@ -667,10 +679,10 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					createCoolText(['Nuno Filipe Studios', 'Remy And Ava', 'mariodevintoons', 'Galax', 'JorgeX_YT'], -50);
+					createCoolText(['Nuno Filipe Studios', 'Remy And Ava', 'DMMaster 636', 'mariodevintoons', 'Galax', 'JorgeX_YT'], -80);
 				// credTextShit.visible = true;
 				case 4:
-					addMoreText('present', -30);
+					addMoreText('present', -60);
 				// credTextShit.text += '\npresent...';
 				// credTextShit.addText();
 				case 5:
@@ -744,8 +756,6 @@ class TitleState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('JingleShadow'));
 					case 'BBPANZU':
 						sound = FlxG.sound.play(Paths.sound('JingleBB'));
-					case 'KOLSAN':
-						sound = FlxG.sound.play(Paths.sound('JingleKolsan'));
 
 					default: //Go back to normal ugly ass boring GF
 						remove(ngSpr);

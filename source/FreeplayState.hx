@@ -485,19 +485,12 @@ class FreeplayState extends MusicBeatState
 		positionHighscore();
 	}
 
-	var lastBeatHit:Int = -1;
-
 	override function beatHit()
 	{
 		super.beatHit();
 
 		if(canBop)
 			iconBop();
-
-		if(lastBeatHit >= curBeat) {
-			// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
-			return;
-		}
 
 		if (FlxG.camera.zoom < 1.35 && songs[curSelected].songName == 'milf' && curPlaying)
 		{
@@ -507,8 +500,6 @@ class FreeplayState extends MusicBeatState
 			if (curBeat >= 208 && curBeat < 272)
 				FlxG.camera.zoom += 0.060;
 		}
-
-		lastBeatHit = curBeat;
 	}
 	
 	override function stepHit()

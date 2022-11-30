@@ -1,6 +1,6 @@
 local allowCountdown = false
 function onStartCountdown()
-	if not allowCountdown and isStoryMode and not seenCutscene and disableDialogues then
+	if not allowCountdown and isStoryMode and not seenCutscene and dialogueIsStoryMode and dialogueIsDisabled then
 		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
 		setObjectCamera('blackBG2','hud')
 		addLuaSprite('blackBG2', true)

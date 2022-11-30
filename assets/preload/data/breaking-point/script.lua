@@ -1,6 +1,6 @@
 local allowCountdown = false
 function onStartCountdown()
-	if not allowCountdown and isStoryMode and not seenCutscene and disableDialogues then
+	if not allowCountdown and isStoryMode and not seenCutscene and dialogueIsStoryMode and dialogueIsDisabled then
 		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
 		setObjectCamera('blackBG2','hud')
 		addLuaSprite('blackBG2', true)
@@ -58,7 +58,22 @@ end
 
 local allowEndShit = false
 function onEndSong()
-	if not allowEndShit and isStoryMode and disableDialogues then
+	if not allowEndShit and isStoryMode and dialogueIsStoryMode and dialogueIsDisabled then
+		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
+		setObjectCamera('blackBG2','hud')
+		addLuaSprite('blackBG2', true)
+		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
+		setObjectCamera('blackBG','hud')
+		addLuaSprite('blackBG', true)
+		setProperty('blackBG2.alpha', 0)
+		setProperty('blackBG.alpha', 0)
+		setProperty('inCutscene', true);
+		runTimer('spriteAppear', 0.1)
+		runTimer('spriteAppear2', 0.6)
+		runTimer('dialogueEnd', 0.6)
+		allowEndShit = true;
+		return Function_Stop;
+	elseif not allowEndShit and dialogueIsEverywhere and dialogueIsDisabled
 		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
 		setObjectCamera('blackBG2','hud')
 		addLuaSprite('blackBG2', true)
