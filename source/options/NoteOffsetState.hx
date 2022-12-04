@@ -477,8 +477,8 @@ class NoteOffsetState extends MusicBeatState
 
 		comboSpr.screenCenter();
 		comboSpr.x = coolText.x + ClientPrefs.comboOffset[0];
-		comboSpr.y += 65 - ClientPrefs.comboOffset[1];
 		comboSpr.x = comboNums.x + 140;
+		comboSpr.y += 65 - ClientPrefs.comboOffset[1];
 
 		comboNums.screenCenter();
 		comboNums.x = coolText.x - 90 + ClientPrefs.comboOffset[2];
