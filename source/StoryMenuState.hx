@@ -130,13 +130,11 @@ class StoryMenuState extends MusicBeatState
 				}
 				num++;
 			}
+
+			var leWeek:WeekData = loadedWeeks[i];
+			var storySong:String = leWeek.storySong;
+			CoolUtil.precacheMusic(storySong);
 		}
-
-		var leWeek:WeekData = loadedWeeks[curWeek];
-		WeekData.setDirectoryFromWeek(leWeek);
-
-		var storySong:String = leWeek.storySong;
-		CoolUtil.precacheMusic(storySong);
 
 		synth = new FlxSound().loadEmbedded(Paths.music('synthloop'), true);
 		drums = new FlxSound();
