@@ -225,7 +225,7 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.sweatShit != null) {
 			sweatShit = FlxG.save.data.sweatShit;
-		}*/
+		}
 		if(FlxG.save.data.fullscreen != null) {
 			fullscreen = FlxG.save.data.fullscreen;
 			if(fullscreen) {
@@ -233,7 +233,7 @@ class ClientPrefs {
 			} else {
 				Main.startFullscreen = false;
 			}
-		}
+		}*/
 		if(FlxG.save.data.framerate != null) {
 			framerate = FlxG.save.data.framerate;
 			if(framerate > FlxG.drawFramerate) {
