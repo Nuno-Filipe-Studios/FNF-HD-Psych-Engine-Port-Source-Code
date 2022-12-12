@@ -299,10 +299,13 @@ class FreeplayState extends MusicBeatState
 		scoreText.text = 'PERSONAL BEST: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
 		positionHighscore();
 
-		if(canBop) {
-			var mult:Float = FlxMath.lerp(1, iconArray[instPlaying].scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			iconArray[instPlaying].scale.set(mult, mult);
-			iconArray[instPlaying].updateHitbox();
+		for (i in 0...iconArray.length)
+		{
+			if(iconArray[i].scale.x > 1 || iconArray[i].scale.y > 1) {
+				var mult:Float = FlxMath.lerp(1, iconArray[i].scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				iconArray[i].scale.set(mult, mult);
+				iconArray[i].updateHitbox();
+			}
 		}
 
 		var upP = controls.UI_UP_P;
