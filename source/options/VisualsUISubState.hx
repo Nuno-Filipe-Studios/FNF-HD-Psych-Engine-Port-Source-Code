@@ -159,12 +159,12 @@ class VisualsUISubState extends BaseOptionsMenu
 		super.destroy();
 	}
 
-	#if desktop
+	/*#if desktop
 	function onFullscreen()
 	{
 		Main.startFullscreen = ClientPrefs.fullscreen;
 	}
-	#end
+	#end*/
 
 	#if !mobile
 	function onChangeFPSCounter()
