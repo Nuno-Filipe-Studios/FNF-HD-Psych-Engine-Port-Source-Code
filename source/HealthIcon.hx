@@ -36,96 +36,52 @@ class HealthIcon extends FlxSprite
 
 	private var iconOffsets:Array<Float> = [0, 0];
 	public function changeIcon(char:String) {
-		if(ClientPrefs.HDIcons == 'New Version') {
-			if(this.char != char) {
-				var name:String = 'icons HD/' + char;
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons HD/icon-' + char; //Older versions of psych engine's support
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons HD/icon-face'; //Prevents crash from missing icon
-				var file:Dynamic = Paths.image(name);
+		if(this.char != char) {
+			var name:String = 'icons/' + char;
 
-				loadGraphic(file); //Load stupidly first for getting the file size
-				loadGraphic(file, true, Math.floor(width / 3), Math.floor(height)); //Then load it fr
-				iconOffsets[0] = (width - 150) / 2;
-				iconOffsets[1] = (width - 150) / 2;
-				iconOffsets[2] = (width - 150) / 2;
-				updateHitbox();
+			if(ClientPrefs.HDIcons == 'New Version') name = 'icons HD/' + char;
+			else if(ClientPrefs.HDIcons == 'Old Version') name = 'icons HD old/' + char;
+			else if(ClientPrefs.HDIcons == 'Older Version') name = 'icons HD older/' + char;
+			else name = 'icons/' + char;
 
-				animation.add(char, [0, 1, 2], 0, false, isPlayer);
-				animation.play(char);
-				this.char = char;
+			// Older versions of psych engine's support
+			if(!Paths.fileExists('images/' + name + '.png', IMAGE) && ClientPrefs.HDIcons == 'New Version') name = 'icons HD/icon-' + char;
+			else if(!Paths.fileExists('images/' + name + '.png', IMAGE) && ClientPrefs.HDIcons == 'Old Version') name = 'icons HD old/icon-' + char;
+			else if(!Paths.fileExists('images/' + name + '.png', IMAGE) && ClientPrefs.HDIcons == 'Older Version') name = 'icons HD older/icon-' + char;
+			else if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char;
+			// Prevents crash from missing icon
+			if(!Paths.fileExists('images/' + name + '.png', IMAGE) && ClientPrefs.HDIcons == 'New Version') name = 'icons HD/icon-face';
+			else if(!Paths.fileExists('images/' + name + '.png', IMAGE) && ClientPrefs.HDIcons == 'Old Version') name = 'icons HD old/icon-face';
+			else if(!Paths.fileExists('images/' + name + '.png', IMAGE) && ClientPrefs.HDIcons == 'Older Version') name = 'icons HD older/icon-face';
+			else if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-face';
 
-				antialiasing = ClientPrefs.globalAntialiasing;
-				if(char.endsWith('-pixel')) {
-					antialiasing = false;
-				}
-			}
-		} else if(ClientPrefs.HDIcons == 'Old Version') {
-			if(this.char != char) {
-				var name:String = 'icons HD old/' + char;
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons HD old/icon-' + char; //Older versions of psych engine's support
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons HD old/icon-face'; //Prevents crash from missing icon
-				var file:Dynamic = Paths.image(name);
+			var file:Dynamic = Paths.image(name);
 
-				loadGraphic(file); //Load stupidly first for getting the file size
-				loadGraphic(file, true, Math.floor(width / 3), Math.floor(height)); //Then load it fr
-				iconOffsets[0] = (width - 150) / 2;
-				iconOffsets[1] = (width - 150) / 2;
-				iconOffsets[2] = (width - 150) / 2;
-				updateHitbox();
-
-				animation.add(char, [0, 1, 2], 0, false, isPlayer);
-				animation.play(char);
-				this.char = char;
-
-				antialiasing = ClientPrefs.globalAntialiasing;
-				if(char.endsWith('-pixel')) {
-					antialiasing = false;
-				}
-			}
-		} else if(ClientPrefs.HDIcons == 'Older Version') {
-			if(this.char != char) {
-				var name:String = 'icons HD older/' + char;
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons HD older/icon-' + char; //Older versions of psych engine's support
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons HD older/icon-face'; //Prevents crash from missing icon
-				var file:Dynamic = Paths.image(name);
-
-				loadGraphic(file); //Load stupidly first for getting the file size
-				loadGraphic(file, true, Math.floor(width / 3), Math.floor(height)); //Then load it fr
-				iconOffsets[0] = (width - 150) / 2;
-				iconOffsets[1] = (width - 150) / 2;
-				iconOffsets[2] = (width - 150) / 2;
-				updateHitbox();
-
-				animation.add(char, [0, 1, 2], 0, false, isPlayer);
-				animation.play(char);
-				this.char = char;
-
-				antialiasing = ClientPrefs.globalAntialiasing;
-				if(char.endsWith('-pixel')) {
-					antialiasing = false;
-				}
-			}
-		} else {
-			if(this.char != char) {
-				var name:String = 'icons/' + char;
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char; //Older versions of psych engine's support
-				if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-face'; //Prevents crash from missing icon
-				var file:Dynamic = Paths.image(name);
-
-				loadGraphic(file); //Load stupidly first for getting the file size
+			loadGraphic(file); //Load stupidly first for getting the file size
+			if(ClientPrefs.HDIcons != 'New Version' && ClientPrefs.HDIcons != 'Old Version' && ClientPrefs.HDIcons != 'Older Version') {
 				loadGraphic(file, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr
 				iconOffsets[0] = (width - 150) / 2;
 				iconOffsets[1] = (width - 150) / 2;
-				updateHitbox();
+			} else {
+				loadGraphic(file, true, Math.floor(width / 3), Math.floor(height)); //Then load it fr
+				iconOffsets[0] = (width - 150) / 2;
+				iconOffsets[1] = (width - 150) / 2;
+				iconOffsets[2] = (width - 150) / 2;
+			}
 
+			updateHitbox();
+
+			if(ClientPrefs.HDIcons != 'New Version' && ClientPrefs.HDIcons != 'Old Version' && ClientPrefs.HDIcons != 'Older Version')
 				animation.add(char, [0, 1], 0, false, isPlayer);
-				animation.play(char);
-				this.char = char;
+			else
+				animation.add(char, [0, 1, 2], 0, false, isPlayer);
 
-				antialiasing = ClientPrefs.globalAntialiasing;
-				if(char.endsWith('-pixel')) {
-					antialiasing = false;
-				}
+			animation.play(char);
+			this.char = char;
+
+			antialiasing = ClientPrefs.globalAntialiasing;
+			if(char.endsWith('-pixel')) {
+				antialiasing = false;
 			}
 		}
 	}
