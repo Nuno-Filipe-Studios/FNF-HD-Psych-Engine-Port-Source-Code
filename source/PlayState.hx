@@ -1610,17 +1610,14 @@ class PlayState extends MusicBeatState
 			case 'street': //Week C - Carol Roll, Body, Boogie
 				var bg:BGSprite = new BGSprite('street_bg', -370, -50, 1, 1);
 				bg.setGraphicSize(Std.int(bg.width * 1.29));
-				bg.active = false;
 				add(bg);
 				
 				if(SONG.song.toLowerCase() == "boogie") {
 					bg = new BGSprite('streetalt', -370, -50, 1, 1);
 					bg.setGraphicSize(Std.int(bg.width * 1.29));
-					bg.active = false;
 				} else {
 					bg = new BGSprite('street', -370, -50, 1, 1);
 					bg.setGraphicSize(Std.int(bg.width * 1.29));
-					bg.active = false;
 				}
 
 				add(bg);
@@ -1636,13 +1633,11 @@ class PlayState extends MusicBeatState
 			case 'sky': //Week C - Hellroll
 				var bg:BGSprite = new BGSprite('sky', -3000, -1450, 0.9, 0.9);
 				bg.setGraphicSize(Std.int(bg.width * 0.38));
-				bg.active = false;
 				add(bg);
 
 				if(!ClientPrefs.lowQuality) {
 					white = new BGSprite('WhiteVG', 0, 100, 0.9, 0.9);
 					white.setGraphicSize(Std.int(white.width * 1.80));
-					white.active = false;
 				}
 		}
 
