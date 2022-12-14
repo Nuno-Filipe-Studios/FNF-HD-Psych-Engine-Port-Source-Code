@@ -50,10 +50,6 @@ class FreeplayState extends MusicBeatState
 		576,588,596,608,614,620,628,
 		640,652,660,672,678,684,692,
 		704,716,724,736,742,748,756,
-		768,780,788,800,806,812,820,
-		832,844,852,864,870,876,884,
-		896,908,916,928,934,940,948,
-		960,972,980,992,998,1004,1012,
 		1024,1034,1040,1050,1056,1067,
 		1072,1078,1082,1088,1098,1104,
 		1114,1120,1030,1136,1142,1146,
@@ -550,19 +546,19 @@ class FreeplayState extends MusicBeatState
 
 		for (i in 0...iconArray.length)
 		{
-			if (ClientPrefs.HDIcons != 'New Version' && ClientPrefs.HDIcons != 'Old Version' && ClientPrefs.HDIcons != 'Older Version'){
+			if (ClientPrefs.HDIcons != 'New Version' && ClientPrefs.HDIcons != 'Old Version' && ClientPrefs.HDIcons != 'Older Version')
 				iconArray[i].animation.curAnim.curFrame = 0;
-			} else {
+			else
 				iconArray[i].animation.curAnim.curFrame = 0;
-			}
+
 			iconArray[i].alpha = 0.6;
 		}
 
-		if (ClientPrefs.HDIcons != 'New Version' && ClientPrefs.HDIcons != 'Old Version' && ClientPrefs.HDIcons != 'Older Version'){
+		if (ClientPrefs.HDIcons != 'New Version' && ClientPrefs.HDIcons != 'Old Version' && ClientPrefs.HDIcons != 'Older Version')
 			iconArray[curSelected].animation.curAnim.curFrame = 0;
-		} else {
+		else
 			iconArray[curSelected].animation.curAnim.curFrame = 2;
-		}
+
 		iconArray[curSelected].alpha = 1;
 
 		for (item in grpSongs.members)
