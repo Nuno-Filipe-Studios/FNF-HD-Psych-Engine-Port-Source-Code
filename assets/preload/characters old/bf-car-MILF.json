@@ -141,6 +141,17 @@
 		},
 		{
 			"offsets": [
+				15,
+				9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge-stressed",
+			"indices": [],
+			"name": "boyfriend dodge"
+		},
+		{
+			"offsets": [
 				-49,
 				40
 			],
@@ -279,6 +290,20 @@
 			"loop": true,
 			"fps": 24,
 			"anim": "dodge-loop",
+			"indices": [
+				11,
+				12
+			],
+			"name": "boyfriend dodge"
+		},
+		{
+			"offsets": [
+				15,
+				9
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "dodge-stressed-loop",
 			"indices": [
 				11,
 				12

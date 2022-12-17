@@ -45,6 +45,8 @@ typedef TitleData =
 	starty:Float,
 	gfx:Float,
 	gfy:Float,
+	psyLogoX:Float,
+	psyLogoY:Float,
 	backgroundSprite:String,
 	showPsyLogo:Bool,
 	bpm:Int
@@ -293,7 +295,7 @@ class TitleState extends MusicBeatState
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
-		logoPsy = new FlxSprite(logoBl.x + 150, logoBl.y + 370);
+		logoPsy = new FlxSprite(logoBl.x + titleJSON.psyLogoX, logoBl.y + titleJSON.psyLogoY);
 		logoPsy.frames = Paths.getSparrowAtlas('logoPsych');
 		logoPsy.antialiasing = ClientPrefs.globalAntialiasing;
 		logoPsy.animation.addByPrefix('idle', 'idle', 24, true);

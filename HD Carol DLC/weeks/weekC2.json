@@ -3,18 +3,14 @@
 	"difficulties": "",
 	"hideFreeplay": false,
 	"weekBackground": "",
+	"weekBefore": "weekC",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"weekBefore": "weekC",
 	"startUnlocked": true,
-	"weekCharacters": [
-		"",
-		"",
-		""
-	],
+	"hideStoryMode": true,
 	"songs": [
 		[
 			"Hellroll",
@@ -22,11 +18,15 @@
 			[
 				255,
 				153,
-				75
+				0
 			]
 		]
 	],
-	"hideStoryMode": true,
-	"weekName": "Custom Week",
-	"hiddenUntilUnlocked": false
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Custom Week"
 }

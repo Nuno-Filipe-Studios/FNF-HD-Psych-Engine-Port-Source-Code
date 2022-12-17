@@ -29,7 +29,7 @@ class FreeplayState extends MusicBeatState
 	var songs:Array<SongMetadata> = [];
 
 	var selector:FlxText;
-	var curSelected:Int = 0;
+	private static var curSelected:Int = 0;
 	var defaultCamZoom:Float = 1;
 	var curDifficulty:Int = -1;
 	private static var lastDifficultyName:String = '';
@@ -50,7 +50,7 @@ class FreeplayState extends MusicBeatState
 		576,588,596,608,614,620,628,
 		640,652,660,672,678,684,692,
 		704,716,724,736,742,748,756,
-		1024,1034,1040,1050,1056,1067,
+		1024,1034,1040,1050,1056,1066,
 		1072,1078,1082,1088,1098,1104,
 		1114,1120,1030,1136,1142,1146,
 		1152,1162,1168,1178,1184,1194,

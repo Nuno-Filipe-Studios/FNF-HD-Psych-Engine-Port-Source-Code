@@ -35,6 +35,17 @@
 		},
 		{
 			"offsets": [
+				10,
+				9
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "dodge",
+			"loop": false,
+			"name": "boyfriend dodge0"
+		},
+		{
+			"offsets": [
 				-37,
 				-57
 			],
@@ -98,6 +109,17 @@
 			"anim": "hey-stressed",
 			"indices": [],
 			"name": "BF HEY!! stressed"
+		},
+		{
+			"offsets": [
+				10,
+				9
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "dodge-stressed",
+			"loop": false,
+			"name": "boyfriend dodge0"
 		},
 		{
 			"offsets": [

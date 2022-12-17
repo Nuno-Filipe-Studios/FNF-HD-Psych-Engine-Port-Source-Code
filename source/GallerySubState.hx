@@ -24,6 +24,10 @@ class GallerySubState extends MusicBeatSubstate
         images = _images;
         trace(images);
 
+        /*for (v in 0...images.length) {
+            images.remove('void');
+        }*/
+
         colorBG = new FlxSprite(-2700,-1500).makeGraphic(FlxG.width * 6, FlxG.height * 6 );
         colorBG.scrollFactor.set(0,0);
         add(colorBG);
@@ -43,6 +47,7 @@ class GallerySubState extends MusicBeatSubstate
 
         camFollow.x = artSprites.members[0].getMidpoint().x;
         camFollow.y = artSprites.members[0].getMidpoint().y;
+
         changeSelection();
     }
 

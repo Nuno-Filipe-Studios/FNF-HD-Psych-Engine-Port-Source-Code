@@ -234,13 +234,13 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		daText.scaleY = 0.7;
 		add(daText);
 
-		/*skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
+		skipText = new FlxText(5, 695, 640, "Press SPACE to skip the dialogue.\n", 40);
 		skipText.scrollFactor.set(0, 0);
 		skipText.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		skipText.antialiasing = ClientPrefs.globalAntialiasing;
 		skipText.borderSize = 2;
 		skipText.borderQuality = 1;
-		add(skipText);*/
+		add(skipText);
 
 		startNextDialog();
 	}
@@ -331,7 +331,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					if(skipDialogueThing != null) {
 						skipDialogueThing();
 					}
-				} else if(currentText >= dialogueList.dialogue.length/*|| FlxG.keys.justPressed.SPACE*/) {
+				} else if(currentText >= dialogueList.dialogue.length || FlxG.keys.justPressed.SPACE) {
 					dialogueEnded = true;
 					for (i in 0...textBoxTypes.length) {
 						var checkArray:Array<String> = ['', 'center-'];
@@ -452,7 +452,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
-			/*if(skipText != null) {
+			if(skipText != null) {
 				skipText.alpha -= 1 * elapsed;
 				if(skipText.alpha <= 0) {
 					skipText.kill();
@@ -460,7 +460,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 					skipText.destroy();
 					skipText = null;
 				}
-			}*/
+			}
 
 			for (i in 0...arrayCharacters.length) {
 				var leChar:DialogueCharacter = arrayCharacters[i];
@@ -479,7 +479,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				}
 			}
 
-			if(box == null && blackBG == null && bgFade == null/*&& skipText == null*/) {
+			if(box == null && blackBG == null && bgFade == null && skipText == null) {
 				for (i in 0...arrayCharacters.length) {
 					var leChar:DialogueCharacter = arrayCharacters[0];
 					if(leChar != null) {

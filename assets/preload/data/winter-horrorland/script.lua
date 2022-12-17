@@ -1,63 +1,55 @@
 local allowCountdown = false
 function onStartCountdown()
-	if not allowCountdown and isStoryMode and not seenCutscene and dialogueIsStoryMode and dialogueIsDisabled then
-		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
-		setObjectCamera('blackBG2','hud')
-		addLuaSprite('blackBG2', true)
-		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
-		setObjectCamera('blackBG','hud')
+	if not allowCountdown and not seenCutscene and isStoryMode and dialogueIsStoryMode and dialogueIsDisabled then
+		makeLuaSprite('blackBG', 'colors/black', 0, 0)
+		setObjectCamera('blackBG','dialogue')
 		addLuaSprite('blackBG', true)
-		setProperty('blackBG.alpha', 0)
+
+		makeLuaSprite('bgFade', 'colors/weirdwhite', 0, 0)
+		setObjectCamera('bgFade','dialogue')
+		addLuaSprite('bgFade', true)
+
+		setProperty('bgFade.alpha', 0)
 		setProperty('inCutscene', true)
-		runTimer('startTween', 0.1)
-		runTimer('removeSprites3', 1.2)
-		allowCountdown = true;
-		return Function_Stop;
+		startDialogue('dialogue')
+		doTweenAlpha('bgFadeTween', 'bgFade', 0.7, 1, 'circout')
+
+		allowCountdown = true
+		return Function_Stop
 	elseif not allowCountdown and not seenCutscene and dialogueIsEverywhere and dialogueIsDisabled then
-		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
-		setObjectCamera('blackBG2','hud')
-		addLuaSprite('blackBG2', true)
-		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
-		setObjectCamera('blackBG','hud')
+		makeLuaSprite('blackBG', 'colors/black', 0, 0)
+		setObjectCamera('blackBG','dialogue')
 		addLuaSprite('blackBG', true)
-		setProperty('blackBG.alpha', 0)
+
+		makeLuaSprite('bgFade', 'colors/weirdwhite', 0, 0)
+		setObjectCamera('bgFade','dialogue')
+		addLuaSprite('bgFade', true)
+
+		setProperty('bgFade.alpha', 0)
 		setProperty('inCutscene', true)
-		runTimer('startTween', 0.1)
-		runTimer('removeSprites3', 1.2)
-		allowCountdown = true;
-		return Function_Stop;
+		startDialogue('dialogue')
+		doTweenAlpha('bgFadeTween', 'bgFade', 0.7, 1, 'circout')
+
+		allowCountdown = true
+		return Function_Stop
 	end
 	doTweenAlpha('blackBGTween', 'blackBG', 0, 1.2, 'circout')
-	onTweenCompleted('blackBGTween')
+	doTweenAlpha('bgFadeTween2', 'bgFade', 0, 1.2, 'circout')
 	runTimer('removeSprites', 1.2)
-	return Function_Continue;
+	return Function_Continue
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'removeSprites' then
 		removeLuaSprite('blackBG')
+		removeLuaSprite('bgFade')
 	end
-	if tag == 'removeSprites2' then
-		removeLuaSprite('blackBG')
-	end
-	if tag == 'removeSprites3' then
-		removeLuaSprite('blackBG2')
-	end
-	if tag == 'startTween' then
-		startDialogue('dialogue')
-		doTweenAlpha('blackBGTween2', 'blackBG', 1, 1, 'circout')
-		onTweenCompleted('blackBGTween2')
-	end
-	if tag == 'dialogueEnd' then
+	if tag == 'startEndDialogue' then
+		doTweenAlpha('bgFadeTween3', 'bgFade', 0.7, 1, 'circout')
 		startDialogue('dialogueEnd')
 	end
-	if tag == 'spriteAppear' then
-		doTweenAlpha('blackBGTween3', 'blackBG2', 1, 0.5, 'circout')
-		onTweenCompleted('blackBGTween3')
-	end
-	if tag == 'spriteAppear2' then
-		doTweenAlpha('blackBGTween2', 'blackBG', 1, 1, 'circout')
-		onTweenCompleted('blackBGTween2')
+	if tag == 'removeSprites2' then
+		removeLuaSprite('bgFade')
 	end
 end
 
@@ -72,38 +64,41 @@ end
 local allowEndShit = false
 function onEndSong()
 	if not allowEndShit and isStoryMode and dialogueIsStoryMode and dialogueIsDisabled then
-		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
-		setObjectCamera('blackBG2','hud')
-		addLuaSprite('blackBG2', true)
-		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
-		setObjectCamera('blackBG','hud')
+		makeLuaSprite('blackBG', 'colors/black', 0, 0)
+		setObjectCamera('blackBG','dialogue')
 		addLuaSprite('blackBG', true)
-		setProperty('blackBG2.alpha', 0)
+
+		makeLuaSprite('bgFade', 'colors/weirdwhite', 0, 0)
+		setObjectCamera('bgFade','dialogue')
+		addLuaSprite('bgFade', true)
+
 		setProperty('blackBG.alpha', 0)
-		setProperty('inCutscene', true);
-		runTimer('spriteAppear', 0.1)
-		runTimer('spriteAppear2', 0.6)
-		runTimer('dialogueEnd', 0.6)
+		setProperty('bgFade.alpha', 0)
+		setProperty('inCutscene', true)
+		doTweenAlpha('blackBGTween2', 'blackBG', 1, 0.5, 'circout')
+		runTimer('startEndDialogue', 0.5)
+
 		allowEndShit = true;
 		return Function_Stop;
 	elseif not allowEndShit and dialogueIsEverywhere and dialogueIsDisabled then
-		makeLuaSprite('blackBG2', 'dialogue2/black',0,0);
-		setObjectCamera('blackBG2','hud')
-		addLuaSprite('blackBG2', true)
-		makeLuaSprite('blackBG', 'dialogue2/blank',0,0);
-		setObjectCamera('blackBG','hud')
+		makeLuaSprite('blackBG', 'colors/black', 0, 0)
+		setObjectCamera('blackBG','dialogue')
 		addLuaSprite('blackBG', true)
-		setProperty('blackBG2.alpha', 0)
+
+		makeLuaSprite('bgFade', 'colors/weirdwhite', 0, 0)
+		setObjectCamera('bgFade','dialogue')
+		addLuaSprite('bgFade', true)
+
 		setProperty('blackBG.alpha', 0)
-		setProperty('inCutscene', true);
-		runTimer('spriteAppear', 0.1)
-		runTimer('spriteAppear2', 0.6)
-		runTimer('dialogueEnd', 0.6)
+		setProperty('bgFade.alpha', 0)
+		setProperty('inCutscene', true)
+		doTweenAlpha('blackBGTween2', 'blackBG', 1, 0.5, 'circout')
+		runTimer('startEndDialogue', 0.5)
+
 		allowEndShit = true;
 		return Function_Stop;
 	end
-	doTweenAlpha('blackBGTween', 'blackBG', 0, 1.2, 'circout')
-	onTweenCompleted('blackBGTween')
+	doTweenAlpha('bgFadeTween4', 'bgFade', 0, 1.2, 'circout')
 	runTimer('removeSprites2', 1.2)
 	return Function_Continue;
 end

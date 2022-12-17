@@ -223,6 +223,7 @@ class PlayState extends MusicBeatState
 	public var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
 	public var camOverlay:FlxCamera;
+	public var camDialogue:FlxCamera;
 	public var camGame:FlxCamera;
 	public var camOther:FlxCamera;
 	public var cameraSpeed:Float = 1;
@@ -490,15 +491,18 @@ class PlayState extends MusicBeatState
 		camGame = new FlxCamera();
 		camOverlay = new FlxCamera();
 		camHUD = new FlxCamera();
+		camDialogue = new FlxCamera();
 		camOther = new FlxCamera();
 
 		camOverlay.bgColor.alpha = 0;
 		camHUD.bgColor.alpha = 0;
+		camDialogue.bgColor.alpha = 0;
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camOverlay, false);
 		FlxG.cameras.add(camHUD, false);
+		FlxG.cameras.add(camDialogue, false);
 		FlxG.cameras.add(camOther, false);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
 
@@ -2156,7 +2160,7 @@ class PlayState extends MusicBeatState
 						}
 					});
 					FlxG.sound.play(Paths.sound('Lights_Turn_On'));
-					snapCamFollowToPos(400, -2050);
+					snapCamFollowToPos(500, -2050);
 					FlxG.camera.focusOn(camFollow);
 					FlxG.camera.zoom = 1.5;
 
@@ -2516,6 +2520,7 @@ class PlayState extends MusicBeatState
 	}
 
 	var dialogueCount:Int = 0;
+	var endDialogueCount:Int = 0;
 	public var psychDialogue:DialogueBoxPsych;
 	//You don't have to add a song, just saying. You can just do "startDialogue(dialogueJson);" and it should work
 	public function startDialogue(dialogueFile:DialogueFile, ?song:String = null):Void
@@ -2525,24 +2530,29 @@ class PlayState extends MusicBeatState
 
 		if(dialogueFile.dialogue.length > 0) {
 			inCutscene = true;
+			camHUD.visible = false;
 			precacheList.set('dialogue', 'sound');
 			precacheList.set('dialogueClose', 'sound');
 			psychDialogue = new DialogueBoxPsych(dialogueFile, song);
 			psychDialogue.scrollFactor.set();
 			if(endingSong) {
 				psychDialogue.finishThing = function() {
+					camHUD.visible = true;
 					psychDialogue = null;
 					endSong();
 				}
+				psychDialogue.nextDialogueThing = startNextEndDialogue;
+				psychDialogue.skipDialogueThing = skipEndDialogue;
 			} else {
 				psychDialogue.finishThing = function() {
+					camHUD.visible = true;
 					psychDialogue = null;
 					startCountdown();
 				}
+				psychDialogue.nextDialogueThing = startNextDialogue;
+				psychDialogue.skipDialogueThing = skipDialogue;
 			}
-			psychDialogue.nextDialogueThing = startNextDialogue;
-			psychDialogue.skipDialogueThing = skipDialogue;
-			psychDialogue.cameras = [camHUD];
+			psychDialogue.cameras = [camDialogue];
 			add(psychDialogue);
 		} else {
 			FlxG.log.warn('Your dialogue file is badly formatted!');
@@ -3285,6 +3295,15 @@ class PlayState extends MusicBeatState
 		callOnLuas('onSkipDialogue', [dialogueCount]);
 	}
 
+	function startNextEndDialogue() {
+		endDialogueCount++;
+		callOnLuas('onNextEndDialogue', [endDialogueCount]);
+	}
+
+	function skipEndDialogue() {
+		callOnLuas('onSkipEndDialogue', [endDialogueCount]);
+	}
+
 	var previousFrameTime:Int = 0;
 	var lastReportedPlayheadPosition:Int = 0;
 	var songTime:Float = 0;
@@ -3883,6 +3902,9 @@ class PlayState extends MusicBeatState
 	{
 		if (!inCutscene && startDrain)
 			health -= 0.0007 * (elapsed / (1/60));
+
+		if (SONG.song.toLowerCase() == 'blammed' && (FlxMath.roundDecimal(FlxG.sound.music.length / 1000, 2) == 92.09))
+			FlxG.log.add('BSIDES MODE ACTIVATED');
 
 		/*if (FlxG.keys.justPressed.NINE)
 		{
@@ -5477,13 +5499,15 @@ class PlayState extends MusicBeatState
 					trace(Paths.formatToSongPath(PlayState.storyPlaylist[0]) + difficulty);
 
 					var winterHorrorlandNext = (Paths.formatToSongPath(SONG.song) == "eggnog");
-					if (winterHorrorlandNext)
+					if (winterHorrorlandNext && ClientPrefs.disablesDialogues != 'Story Mode' && ClientPrefs.disablesDialogues != 'Everywhere')
 					{
 						var blackShit:FlxSprite = new FlxSprite(-FlxG.width * FlxG.camera.zoom,
 							-FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
 						blackShit.scrollFactor.set();
 						add(blackShit);
 						camHUD.visible = false;
+
+						FlxG.sound.play(Paths.sound('Lights_Shut_off'));
 					}
 
 					FlxTransitionableState.skipNextTransIn = true;
@@ -5495,7 +5519,7 @@ class PlayState extends MusicBeatState
 					PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0] + difficulty, PlayState.storyPlaylist[0]);
 					FlxG.sound.music.stop();
 
-					if(winterHorrorlandNext) {
+					if(winterHorrorlandNext && ClientPrefs.disablesDialogues != 'Story Mode' && ClientPrefs.disablesDialogues != 'Everywhere') {
 						new FlxTimer().start(1.5, function(tmr:FlxTimer) {
 							cancelMusicFadeTween();
 							LoadingState.loadAndSwitchState(new PlayState());

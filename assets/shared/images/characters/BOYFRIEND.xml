@@ -285,195 +285,195 @@
 	<SubTexture name="BF NOTE UP MISS0023" x="1856" y="458" width="345" height="398" frameX="-1" frameY="-109" frameWidth="376" frameHeight="507"/>
 	<SubTexture name="BF NOTE UP MISS0024" x="1856" y="458" width="345" height="398" frameX="-1" frameY="-109" frameWidth="376" frameHeight="507"/>
 	<SubTexture name="BF NOTE UP MISS0025" x="1856" y="458" width="345" height="398" frameX="-1" frameY="-109" frameWidth="376" frameHeight="507"/>
-	<SubTexture name="BF Pico Dodge0000" x="2201" y="458" width="532" height="517" frameX="-2" frameY="-10" frameWidth="537" frameHeight="527"/>
-	<SubTexture name="BF Pico Dodge0001" x="2733" y="458" width="534" height="519" frameX="0" frameY="-8" frameWidth="537" frameHeight="527"/>
-	<SubTexture name="BF Pico Dodge0002" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0003" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0004" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0005" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0006" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0007" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0008" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0009" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0010" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0011" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF Pico Dodge0012" x="3267" y="458" width="537" height="527"/>
-	<SubTexture name="BF idle dance0000" x="3804" y="458" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0001" x="3804" y="458" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0002" x="4207" y="458" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0003" x="4207" y="458" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0004" x="4612" y="458" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0005" x="4612" y="458" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0006" x="5014" y="458" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0007" x="5014" y="458" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0008" x="5419" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0009" x="5419" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0010" x="5419" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0011" x="5419" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0012" x="5419" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle dance0013" x="5419" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="BF idle shaking0000" x="5824" y="458" width="405" height="459" frameX="-1" frameY="-1" frameWidth="406" frameHeight="461"/>
-	<SubTexture name="BF idle shaking0001" x="6229" y="458" width="405" height="459" frameX="-1" frameY="-1" frameWidth="406" frameHeight="461"/>
-	<SubTexture name="BF idle shaking0002" x="6634" y="458" width="404" height="461" frameX="-1" frameY="0" frameWidth="406" frameHeight="461"/>
-	<SubTexture name="BF idle shaking0003" x="7038" y="458" width="406" height="460" frameX="0" frameY="0" frameWidth="406" frameHeight="461"/>
-	<SubTexture name="BF-spooky0000" x="7444" y="458" width="381" height="413" frameX="0" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0001" x="7444" y="458" width="381" height="413" frameX="0" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0002" x="0" y="985" width="386" height="415" frameX="-12" frameY="-2" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0003" x="0" y="985" width="386" height="415" frameX="-12" frameY="-2" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0004" x="386" y="985" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0005" x="386" y="985" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0006" x="709" y="985" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0007" x="709" y="985" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0008" x="1030" y="985" width="376" height="415" frameX="-20" frameY="0" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0009" x="1030" y="985" width="376" height="415" frameX="-20" frameY="0" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0010" x="1406" y="985" width="366" height="409" frameX="-23" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0011" x="1406" y="985" width="366" height="409" frameX="-23" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0012" x="386" y="985" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0013" x="386" y="985" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0014" x="709" y="985" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="BF-spooky0015" x="709" y="985" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Left Stressed0000" x="1772" y="985" width="341" height="453" frameX="-7" frameY="0" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0001" x="2113" y="985" width="341" height="453" frameX="-7" frameY="0" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0002" x="2454" y="985" width="337" height="453" frameX="-11" frameY="0" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0003" x="2791" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0004" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0005" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0006" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0007" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0008" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0009" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0010" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0011" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0012" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0013" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Left Stressed0014" x="3139" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
-	<SubTexture name="Stressed Down0000" x="3487" y="985" width="381" height="405" frameX="0" frameY="-11" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0001" x="3868" y="985" width="381" height="405" frameX="0" frameY="-11" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0002" x="4249" y="985" width="381" height="411" frameX="0" frameY="-5" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0003" x="4630" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0004" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0005" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0006" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0007" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0008" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0009" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0010" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0011" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0012" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0013" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed Down0014" x="5006" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
-	<SubTexture name="Stressed HEY!!0000" x="5382" y="985" width="467" height="450" frameX="-1" frameY="-6" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0001" x="5382" y="985" width="467" height="450" frameX="-1" frameY="-6" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0002" x="5849" y="985" width="447" height="457" frameX="0" frameY="-1" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0003" x="5849" y="985" width="447" height="457" frameX="0" frameY="-1" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0004" x="6296" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0005" x="6747" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0006" x="7198" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0007" x="7198" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0008" x="7649" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0009" x="7649" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0010" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0011" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0012" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0013" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0014" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0015" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0016" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0017" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0018" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0019" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0020" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0021" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0022" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0023" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0024" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed HEY!!0025" x="0" y="1443" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
-	<SubTexture name="Stressed Idle0000" x="451" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0001" x="451" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0002" x="854" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0003" x="854" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0004" x="1257" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0005" x="1660" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0006" x="2063" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0007" x="2063" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0008" x="2466" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0009" x="2466" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0010" x="2869" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0011" x="2869" y="1443" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0012" x="3272" y="1443" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0013" x="3272" y="1443" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0014" x="3677" y="1443" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0015" x="3677" y="1443" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0016" x="4079" y="1443" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0017" x="4079" y="1443" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0018" x="4484" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0019" x="4484" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0020" x="4889" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0021" x="4889" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0022" x="5294" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0023" x="5699" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0024" x="6104" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0025" x="6104" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0026" x="6509" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0027" x="6509" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Idle0028" x="6914" y="1443" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
-	<SubTexture name="Stressed Pico Dodge0000" x="7319" y="1443" width="532" height="517" frameX="-2" frameY="-10" frameWidth="537" frameHeight="527"/>
-	<SubTexture name="Stressed Pico Dodge0001" x="0" y="1960" width="534" height="519" frameX="0" frameY="-8" frameWidth="537" frameHeight="527"/>
-	<SubTexture name="Stressed Pico Dodge0002" x="534" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0003" x="534" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0004" x="1071" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0005" x="1608" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0006" x="2145" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0007" x="2145" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0008" x="2682" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0009" x="2682" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0010" x="3219" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0011" x="3219" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Pico Dodge0012" x="3219" y="1960" width="537" height="527"/>
-	<SubTexture name="Stressed Right0000" x="3756" y="1960" width="396" height="452" frameX="0" frameY="-2" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0001" x="4152" y="1960" width="396" height="452" frameX="0" frameY="-2" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0002" x="4548" y="1960" width="392" height="452" frameX="0" frameY="-2" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0003" x="4940" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0004" x="5330" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0005" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0006" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0007" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0008" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0009" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0010" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0011" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0012" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0013" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Right0014" x="5720" y="1960" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
-	<SubTexture name="Stressed Up0000" x="6110" y="1960" width="378" height="523" frameX="-6" frameY="0" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0001" x="6488" y="1960" width="378" height="523" frameX="-6" frameY="0" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0002" x="6866" y="1960" width="378" height="515" frameX="-6" frameY="-8" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0003" x="7244" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0004" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0005" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0006" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0007" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0008" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0009" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0010" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0011" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0012" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0013" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed Up0014" x="7628" y="1960" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
-	<SubTexture name="Stressed spooky0000" x="0" y="2487" width="381" height="413" frameX="0" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0001" x="0" y="2487" width="381" height="413" frameX="0" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0002" x="381" y="2487" width="386" height="415" frameX="-12" frameY="-2" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0003" x="381" y="2487" width="386" height="415" frameX="-12" frameY="-2" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0004" x="767" y="2487" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0005" x="767" y="2487" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0006" x="1090" y="2487" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0007" x="1090" y="2487" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0008" x="1411" y="2487" width="376" height="415" frameX="-20" frameY="0" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0009" x="1411" y="2487" width="376" height="415" frameX="-20" frameY="0" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0010" x="1787" y="2487" width="366" height="409" frameX="-23" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0011" x="1787" y="2487" width="366" height="409" frameX="-23" frameY="-4" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0012" x="767" y="2487" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0013" x="767" y="2487" width="323" height="349" frameX="-40" frameY="-65" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0014" x="1090" y="2487" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
-	<SubTexture name="Stressed spooky0015" x="1090" y="2487" width="321" height="359" frameX="-44" frameY="-52" frameWidth="398" frameHeight="417"/>
+	<SubTexture name="BF Pico Dodge0000" x="2201" y="458" width="533" height="517" frameX="0" frameY="-10" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0001" x="2734" y="458" width="534" height="519" frameX="-2" frameY="-8" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0002" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0003" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0004" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0005" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0006" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0007" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0008" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0009" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0010" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0011" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF Pico Dodge0012" x="3268" y="458" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="BF idle dance0000" x="3805" y="458" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0001" x="3805" y="458" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0002" x="4208" y="458" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0003" x="4208" y="458" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0004" x="4613" y="458" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0005" x="4613" y="458" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0006" x="5015" y="458" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0007" x="5015" y="458" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0008" x="5420" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0009" x="5420" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0010" x="5420" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0011" x="5420" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0012" x="5420" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle dance0013" x="5420" y="458" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="BF idle shaking0000" x="5825" y="458" width="405" height="459" frameX="-1" frameY="-1" frameWidth="406" frameHeight="461"/>
+	<SubTexture name="BF idle shaking0001" x="6230" y="458" width="405" height="459" frameX="-1" frameY="-1" frameWidth="406" frameHeight="461"/>
+	<SubTexture name="BF idle shaking0002" x="6635" y="458" width="404" height="461" frameX="-1" frameY="0" frameWidth="406" frameHeight="461"/>
+	<SubTexture name="BF idle shaking0003" x="7039" y="458" width="406" height="460" frameX="0" frameY="0" frameWidth="406" frameHeight="461"/>
+	<SubTexture name="BF-spooky0000" x="7445" y="458" width="433" height="469" frameX="0" frameY="-5" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0001" x="7445" y="458" width="433" height="469" frameX="0" frameY="-5" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0002" x="0" y="985" width="439" height="472" frameX="-13" frameY="-2" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0003" x="0" y="985" width="439" height="472" frameX="-13" frameY="-2" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0004" x="439" y="985" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0005" x="439" y="985" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0006" x="806" y="985" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0007" x="806" y="985" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0008" x="1172" y="985" width="428" height="471" frameX="-22" frameY="0" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0009" x="1172" y="985" width="428" height="471" frameX="-22" frameY="0" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0010" x="1600" y="985" width="417" height="464" frameX="-25" frameY="-6" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0011" x="1600" y="985" width="417" height="464" frameX="-25" frameY="-6" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0012" x="439" y="985" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0013" x="439" y="985" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0014" x="806" y="985" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="BF-spooky0015" x="806" y="985" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Left Stressed0000" x="2017" y="985" width="341" height="453" frameX="-7" frameY="0" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0001" x="2358" y="985" width="341" height="453" frameX="-7" frameY="0" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0002" x="2699" y="985" width="337" height="453" frameX="-11" frameY="0" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0003" x="3036" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0004" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0005" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0006" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0007" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0008" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0009" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0010" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0011" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0012" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0013" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Left Stressed0014" x="3384" y="985" width="348" height="451" frameX="0" frameY="-2" frameWidth="348" frameHeight="453"/>
+	<SubTexture name="Stressed Down0000" x="3732" y="985" width="381" height="405" frameX="0" frameY="-11" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0001" x="4113" y="985" width="381" height="405" frameX="0" frameY="-11" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0002" x="4494" y="985" width="381" height="411" frameX="0" frameY="-5" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0003" x="4875" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0004" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0005" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0006" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0007" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0008" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0009" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0010" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0011" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0012" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0013" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed Down0014" x="5251" y="985" width="376" height="416" frameX="-1" frameY="0" frameWidth="381" frameHeight="416"/>
+	<SubTexture name="Stressed HEY!!0000" x="5627" y="985" width="467" height="450" frameX="-1" frameY="-6" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0001" x="5627" y="985" width="467" height="450" frameX="-1" frameY="-6" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0002" x="6094" y="985" width="447" height="457" frameX="0" frameY="-1" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0003" x="6094" y="985" width="447" height="457" frameX="0" frameY="-1" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0004" x="6541" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0005" x="6992" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0006" x="7443" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0007" x="7443" y="985" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0008" x="0" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0009" x="0" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0010" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0011" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0012" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0013" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0014" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0015" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0016" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0017" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0018" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0019" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0020" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0021" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0022" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0023" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0024" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed HEY!!0025" x="451" y="1457" width="451" height="458" frameX="0" frameY="0" frameWidth="468" frameHeight="458"/>
+	<SubTexture name="Stressed Idle0000" x="902" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0001" x="902" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0002" x="1305" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0003" x="1305" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0004" x="1708" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0005" x="2111" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0006" x="2514" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0007" x="2514" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0008" x="2917" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0009" x="2917" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0010" x="3320" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0011" x="3320" y="1457" width="403" height="439" frameX="-1" frameY="-20" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0012" x="3723" y="1457" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0013" x="3723" y="1457" width="405" height="440" frameX="0" frameY="-19" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0014" x="4128" y="1457" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0015" x="4128" y="1457" width="402" height="445" frameX="-4" frameY="-14" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0016" x="4530" y="1457" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0017" x="4530" y="1457" width="405" height="458" frameX="-4" frameY="-1" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0018" x="4935" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0019" x="4935" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0020" x="5340" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0021" x="5340" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0022" x="5745" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0023" x="6150" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0024" x="6555" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0025" x="6555" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0026" x="6960" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0027" x="6960" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Idle0028" x="7365" y="1457" width="405" height="459" frameX="-4" frameY="0" frameWidth="409" frameHeight="459"/>
+	<SubTexture name="Stressed Pico Dodge0000" x="0" y="1916" width="533" height="517" frameX="0" frameY="-10" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0001" x="533" y="1916" width="534" height="519" frameX="-2" frameY="-8" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0002" x="1067" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0003" x="1067" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0004" x="1604" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0005" x="2141" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0006" x="2678" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0007" x="2678" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0008" x="3215" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0009" x="3215" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0010" x="3752" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0011" x="3752" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Pico Dodge0012" x="3752" y="1916" width="537" height="527" frameX="-2" frameY="0" frameWidth="539" frameHeight="527"/>
+	<SubTexture name="Stressed Right0000" x="4289" y="1916" width="396" height="452" frameX="0" frameY="-2" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0001" x="4685" y="1916" width="396" height="452" frameX="0" frameY="-2" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0002" x="5081" y="1916" width="392" height="452" frameX="0" frameY="-2" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0003" x="5473" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0004" x="5863" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0005" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0006" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0007" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0008" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0009" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0010" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0011" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0012" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0013" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Right0014" x="6253" y="1916" width="390" height="454" frameX="0" frameY="0" frameWidth="396" frameHeight="454"/>
+	<SubTexture name="Stressed Up0000" x="6643" y="1916" width="378" height="523" frameX="-6" frameY="0" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0001" x="7021" y="1916" width="378" height="523" frameX="-6" frameY="0" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0002" x="7399" y="1916" width="378" height="515" frameX="-6" frameY="-8" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0003" x="0" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0004" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0005" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0006" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0007" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0008" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0009" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0010" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0011" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0012" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0013" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed Up0014" x="384" y="2443" width="384" height="509" frameX="0" frameY="-13" frameWidth="384" frameHeight="523"/>
+	<SubTexture name="Stressed spooky0000" x="768" y="2443" width="433" height="469" frameX="0" frameY="-5" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0001" x="768" y="2443" width="433" height="469" frameX="0" frameY="-5" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0002" x="1201" y="2443" width="439" height="472" frameX="-13" frameY="-2" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0003" x="1201" y="2443" width="439" height="472" frameX="-13" frameY="-2" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0004" x="1640" y="2443" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0005" x="1640" y="2443" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0006" x="2007" y="2443" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0007" x="2007" y="2443" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0008" x="2373" y="2443" width="428" height="471" frameX="-22" frameY="0" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0009" x="2373" y="2443" width="428" height="471" frameX="-22" frameY="0" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0010" x="2801" y="2443" width="417" height="464" frameX="-25" frameY="-6" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0011" x="2801" y="2443" width="417" height="464" frameX="-25" frameY="-6" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0012" x="1640" y="2443" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0013" x="1640" y="2443" width="367" height="395" frameX="-46" frameY="-75" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0014" x="2007" y="2443" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
+	<SubTexture name="Stressed spooky0015" x="2007" y="2443" width="366" height="408" frameX="-49" frameY="-59" frameWidth="452" frameHeight="474"/>
 </TextureAtlas>
