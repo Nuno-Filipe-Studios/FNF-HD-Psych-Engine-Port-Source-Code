@@ -61,7 +61,7 @@ jobs:
         with:
           name: linuxBuild
           path: 'export/release/linux/bin'
-  buildWindows:
+  buildWindows64:
     runs-on: windows-latest
     
     steps:
@@ -103,7 +103,7 @@ jobs:
         with:
           name: windowsBuildx64
           path: export/release/windows/bin
-  buildWindows-x32:
+  buildWindows32:
     runs-on: windows-latest
     
     steps:
