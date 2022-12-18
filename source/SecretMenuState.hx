@@ -26,7 +26,7 @@ class SecretMenuState extends MusicBeatState
 	];
 	var weekTexts:FlxTypedGroup<FlxSprite>;
 	var selectionBG:FlxTypedGroup<FlxSprite>;
-	var curSelected:Int = 0;
+	private static var curSelected:Int = 0;
 	var checkers:FlxBackdrop;
 	var logoBl:FlxSprite;
 	var rightArrow:FlxSprite;

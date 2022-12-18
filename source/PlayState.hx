@@ -2200,6 +2200,11 @@ class PlayState extends MusicBeatState
 		precacheList.set('missnote2', 'sound');
 		precacheList.set('missnote3', 'sound');
 
+		//PRECACHING CUSTOM NOTES SOUNDS
+		precacheList.set('shooters', 'sound');
+		precacheList.set('laser', 'sound');
+		precacheList.set('bwow', 'sound');
+
 		if (PauseSubState.songName != null) {
 			precacheList.set(PauseSubState.songName, 'music');
 		} else if(ClientPrefs.pauseMusic != 'None') {
@@ -2223,6 +2228,9 @@ class PlayState extends MusicBeatState
 
 		cacheCountdown();
 		cachePopUpScore();
+		if(dad.curCharacter == 'mom-car-horny' || dad.curCharacter == 'mom-car' || dad.curCharacter == 'hellchart-carol')
+			cacheBeams();
+
 		for (key => type in precacheList)
 		{
 			//trace('Key $key is type $type');
@@ -5798,6 +5806,29 @@ class PlayState extends MusicBeatState
 			},
 			startDelay: Conductor.crochet * 0.002 / playbackRate
 		});
+	}
+
+	function cacheBeams() {
+		var momBeam = new FlxSprite(dad.x + 545, dad.y + 225);
+		momBeam.frames = Paths.getSparrowAtlas('limo/mom_beam', 'week4');
+		momBeam.scrollFactor.set(1, 1);
+		momBeam.antialiasing = ClientPrefs.globalAntialiasing;
+		momBeam.animation.addByIndices('beamThatMF', 'MOM BEAM 2', [0,1,2,3,4,5,6,7,8,9,10,11,12], '', 24, false); //Idk what is a beamThatMF but who cares
+		momBeam.animation.play('beamThatMF', false, false, 0);
+		momBeam.animation.finishCallback = function(anim:String){momBeam.destroy();}
+		add(momBeam);
+
+		var carolBeam = new FlxSprite(dad.x + 553, dad.y + 285);
+		carolBeam.frames = Paths.getSparrowAtlas('carol_beam');
+		carolBeam.scrollFactor.set(1, 1);
+		carolBeam.antialiasing = ClientPrefs.globalAntialiasing;
+		carolBeam.animation.addByIndices('beamThatMF', 'carol beam', [0,1,2,3,4,5,6,7,8,9,10,11,12], '', 29, false); //Idk what is a beamThatMF but who cares
+		carolBeam.animation.play('beamThatMF', false, false, 0);
+		carolBeam.animation.finishCallback = function(anim:String){carolBeam.destroy();}
+		add(carolBeam);
+
+		momBeam.visible = false;
+		carolBeam.visible = false;
 	}
 
 	public var strumsBlocked:Array<Bool> = [];
