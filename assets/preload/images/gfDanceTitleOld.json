@@ -5,8 +5,8 @@
 	"starty":576,
 	"gfx":512,
 	"gfy":50,
-	"psyLogoX":110,
-	"psyLogoY":370,
+	"psyLogoX":-30,
+	"psyLogoY":252,
 	"backgroundSprite":"",
 	"showPsyLogo":true,
 	"bpm":102
