@@ -212,6 +212,7 @@ class FunkinLua {
 		set('dialogueIsStoryMode', ClientPrefs.disablesDialogues == 'Story Mode');
 		set('dialogueIsEverywhere', ClientPrefs.disablesDialogues == 'Everywhere');
 		set('dialogueIsDisabled', ClientPrefs.disablesDialogues != 'Disabled');
+		set('oldHDsprites', ClientPrefs.OldHDbg);
 		set('scriptName', scriptName);
 		set('currentModDirectory', Paths.currentModDirectory);
 

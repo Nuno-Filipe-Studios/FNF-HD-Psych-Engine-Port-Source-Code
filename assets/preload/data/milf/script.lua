@@ -1,13 +1,23 @@
 local allowCountdown = false
 function onStartCountdown()
 	if not allowCountdown and isStoryMode and not seenCutscene and dialogueIsStoryMode and dialogueIsDisabled then
-		makeLuaSprite('cutsceneImage', 'dialogue/bg/news2', 0, 0);
-		setObjectCamera('cutsceneImage','dialogue')
-		addLuaSprite('cutsceneImage', true)
+		if not oldHDsprites then
+			makeLuaSprite('cutsceneImage', 'dialogue/bg/news2', 0, 0);
+			setObjectCamera('cutsceneImage','dialogue')
+			addLuaSprite('cutsceneImage', true)
 
-		makeLuaSprite('cutsceneImage2', 'dialogue/bg/news3', 0, 0);
-		setObjectCamera('cutsceneImage2','dialogue')
-		addLuaSprite('cutsceneImage2', true)
+			makeLuaSprite('cutsceneImage2', 'dialogue/bg/news3', 0, 0);
+			setObjectCamera('cutsceneImage2','dialogue')
+			addLuaSprite('cutsceneImage2', true)
+		else
+			makeLuaSprite('cutsceneImage', 'dialogue/bg/news2-old', 0, 0);
+			setObjectCamera('cutsceneImage','dialogue')
+			addLuaSprite('cutsceneImage', true)
+
+			makeLuaSprite('cutsceneImage2', 'dialogue/bg/news3-old', 0, 0);
+			setObjectCamera('cutsceneImage2','dialogue')
+			addLuaSprite('cutsceneImage2', true)
+		end
 
 		makeLuaSprite('blackBG', 'colors/black', 0, 0)
 		setObjectCamera('blackBG','dialogue')
@@ -29,13 +39,23 @@ function onStartCountdown()
 		allowCountdown = true
 		return Function_Stop
 	elseif not allowCountdown and not seenCutscene and dialogueIsEverywhere and dialogueIsDisabled then
-		makeLuaSprite('cutsceneImage', 'dialogue/bg/news2', 0, 0);
-		setObjectCamera('cutsceneImage','dialogue')
-		addLuaSprite('cutsceneImage', true)
+		if not oldHDsprites then
+			makeLuaSprite('cutsceneImage', 'dialogue/bg/news2', 0, 0);
+			setObjectCamera('cutsceneImage','dialogue')
+			addLuaSprite('cutsceneImage', true)
 
-		makeLuaSprite('cutsceneImage2', 'dialogue/bg/news3', 0, 0);
-		setObjectCamera('cutsceneImage2','dialogue')
-		addLuaSprite('cutsceneImage2', true)
+			makeLuaSprite('cutsceneImage2', 'dialogue/bg/news3', 0, 0);
+			setObjectCamera('cutsceneImage2','dialogue')
+			addLuaSprite('cutsceneImage2', true)
+		else
+			makeLuaSprite('cutsceneImage', 'dialogue/bg/news2-old', 0, 0);
+			setObjectCamera('cutsceneImage','dialogue')
+			addLuaSprite('cutsceneImage', true)
+
+			makeLuaSprite('cutsceneImage2', 'dialogue/bg/news3-old', 0, 0);
+			setObjectCamera('cutsceneImage2','dialogue')
+			addLuaSprite('cutsceneImage2', true)
+		end
 
 		makeLuaSprite('blackBG', 'colors/black', 0, 0)
 		setObjectCamera('blackBG','dialogue')
