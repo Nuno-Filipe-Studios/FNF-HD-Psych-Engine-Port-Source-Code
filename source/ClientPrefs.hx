@@ -44,6 +44,7 @@ class ClientPrefs {
 	public static var checkForUpdates:Bool = true;
 	public static var comboStacking = true;
 	public static var fullscreen = false;
+	public static var loadingScreen:Bool = true;
 	//public static var showWarningScreen:Bool = true;
 	//public static var sweatShit:Bool = false;
 	public static var gameplaySettings:Map<String, Dynamic> = [
@@ -157,7 +158,8 @@ class ClientPrefs {
 		FlxG.save.data.pauseMusic = pauseMusic;
 		FlxG.save.data.checkForUpdates = checkForUpdates;
 		FlxG.save.data.comboStacking = comboStacking;
-		FlxG.save.data.fullscreen = fullscreen;
+		//FlxG.save.data.fullscreen = fullscreen;
+		FlxG.save.data.loadingScreen = loadingScreen;
 	
 		FlxG.save.flush();
 
@@ -333,7 +335,11 @@ class ClientPrefs {
 			checkForUpdates = FlxG.save.data.checkForUpdates;
 		}
 		if (FlxG.save.data.comboStacking != null)
+		{
 			comboStacking = FlxG.save.data.comboStacking;
+		}
+		if (FlxG.save.data.loadingScreen != null)
+			loadingScreen = FlxG.save.data.loadingScreen;
 
 		var save:FlxSave = new FlxSave();
 		save.bind('controls_v2' #if (flixel < "5.0.0"), 'ninjamuffin99' #end);

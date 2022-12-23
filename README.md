@@ -18,7 +18,7 @@ If you want video support on your mod, simply do `haxelib install hxCodec` on a 
 otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 
 ## Credits:
-* Nuno Filipe Studios - Main porter, coder, animator, Android Port help
+* Nuno Filipe Studios - Main porter, coder, animator, Android Port help, Mac Port, Linux Port, 32bits version
 * Remy And Ava - Mobile optimizer, gamejolt link
 * DANIZIN - Old Android Port
 * FNF BR - Android Port
@@ -29,7 +29,7 @@ otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 * JorgeX_YT - Dev Build Tester
 
 ### Used some codes from
-* Wednesday's Infidelity Team - Dodge keybinds text code
+* Wednesday's Infidelity Team - Used dodge keybinds text code
 * Arrow Funk Team - Used text font
 * Trevent booh! - Used icon flip lua code
 

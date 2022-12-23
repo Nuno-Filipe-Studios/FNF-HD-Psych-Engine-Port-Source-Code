@@ -82,7 +82,7 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			["FNF' HD PE Port Team"],
-			['Nuno Filipe Studios',	'nuno',				'Main porter, coder, animator, Android Port help',			'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
+			['Nuno Filipe Studios',	'nuno',				'Main porter, coder, animator, Android Port help, Mac Port, Linux Port, 32bits version',	'https://www.youtube.com/channel/UCq7G3p4msVN5SX2CpJ86tTw',	'878787'],
 			['Remy And Ava',		'ava',				'Mobile optimizer, gamejolt link',							'https://www.youtube.com/channel/UCxBKG1LFQM2Kte_BQ0isDww',	'F7F7F7'],
 			['DANIZIN',				'dan',				'Old Android Port',											'https://www.youtube.com/channel/UCvTYcAn6ciOojpfcHtUxJBQ',	'FFD166'],
 			['FNF BR',				'br',				'Android Port',												'https://www.youtube.com/channel/UCtEMWRthfza-LaNz7H2Z3oQ',	'FCBF49'],
@@ -93,7 +93,7 @@ class CreditsState extends MusicBeatState
 			['JorgeX_YT',			'jorge',			'Dev Build Tester',											'https://www.youtube.com/channel/UCl-GHl189q4erRjnnVmqNUA',	'70E000'],
 			[''],
 			['Used some codes from'],
-			["Wednesday's Infidelity Team",			'mouse',			'Dodge keybinds text code',					'https://gamebanana.com/mods/343688',	'444444'],
+			["Wednesday's Infidelity Team",			'mouse',			'Used dodge keybinds text code',			'https://gamebanana.com/mods/343688',	'444444'],
 			['Arrow Funk Team',		'bidu',				'Used text font',											'https://gamebanana.com/mods/370234',	'F72585'],
 			['Trevent booh!',		null,				'Used icon flip lua code',									'https://www.youtube.com/channel/UCMzim382hWHmR1un4nzEOLw',	'00FFBB'],
 			[''],

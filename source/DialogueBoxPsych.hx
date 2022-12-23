@@ -54,6 +54,8 @@ typedef DialogueLine = {
 	var boxState:Null<String>;
 	var speed:Null<Float>;
 	var sound:Null<String>;
+	var effect:Null<String>;
+	var effectTime:Null<Float>;
 }
 
 class DialogueCharacter extends FlxSprite
@@ -557,11 +559,35 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				else if(rate > 48) rate = 48;
 				char.animation.curAnim.frameRate = rate;
 			}
+
+			if(curDialogue.effect != null) doEffect(curDialogue.effect, char, curDialogue.effectTime);
 		}
 		currentText++;
 
 		if(nextDialogueThing != null) {
 			nextDialogueThing();
+		}
+	}
+
+	var posTween:FlxTween;
+	var alphaTween:FlxTween;
+	function doEffect(effect:String, portrait:Dynamic, ?time:Float = 1)
+	{
+		switch(effect) {
+			case fadeOut:
+				alphaTween.cancel();
+				portrait.alpha = 1;
+				alphaTween = FlxTween.tween(portrait, {alpha: 0}, time);
+			case fadeIn:
+				alphaTween.cancel();
+				portrait.alpha = 0;
+				alphaTween = FlxTween.tween(portrait, {alpha: 1}, time);
+			case exitLeft:
+				posTween.cancel();
+				posTween = FlxTween.tween(portrait, {x: 0 - portrait.width}, time, {ease: FlxEase.circIn});
+			case exitRight:
+				posTween.cancel();
+				posTween = FlxTween.tween(portrait, {x: FlxG.width}, time, {ease: FlxEase.circIn});
 		}
 	}
 

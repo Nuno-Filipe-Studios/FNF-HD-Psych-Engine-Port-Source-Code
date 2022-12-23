@@ -86,6 +86,46 @@
 		},
 		{
 			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			],
+			"fps": 24,
+			"anim": "danceRight-stressed",
+			"loop": false,
+			"name": "Stressed spooky"
+		},
+		{
+			"offsets": [
+				-20,
+				2
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			],
+			"fps": 24,
+			"anim": "danceLeft-stressed",
+			"loop": false,
+			"name": "Stressed spooky"
+		},
+		{
+			"offsets": [
 				-8,
 				3
 			],

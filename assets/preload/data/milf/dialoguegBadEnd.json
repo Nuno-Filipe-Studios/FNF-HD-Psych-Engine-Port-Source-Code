@@ -9,140 +9,140 @@
 			"portrait": "mom"
 		},
 		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
-			"portrait": "mom",
-			"boxState": "normal",
 			"expression": "defaultSweat",
-			"text": "You sapped me of all of my juices. From my mic, that is, hehe..."
+			"text": "You sapped me of all of my juices. From my mic, that is, hehe...",
+			"boxState": "normal",
+			"portrait": "mom",
+			"speed": 0.05,
+			"sound": "dialogue/momText"
 		},
 		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
-			"portrait": "mom",
-			"boxState": "normal",
 			"expression": "default",
-			"text": "I know you won, but...can you please, just come be a part of my collection?"
+			"text": "I know you won, but...can you please, just come be a part of my collection?",
+			"boxState": "normal",
+			"portrait": "mom",
+			"speed": 0.05,
+			"sound": "dialogue/momText"
 		},
 		{
-			"sound": "dialogue/boyfriendText",
-			"speed": 0.05,
-			"portrait": "bf",
+			"expression": "clear",
+			"text": "I don't want you!! DAMN!",
 			"boxState": "angry",
-			"expression": "clear",
-			"text": "I don't want you!! DAMN!"
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
 		},
 		{
-			"sound": "dialogue/boyfriendText",
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "clear",
-			"text": "I'm with your daughter because I love HER."
+			"text": "I'm with your daughter because I love HER.",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
 		},
 		{
-			"sound": "dialogue/boyfriendText",
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "dreamy",
-			"text": "I love the way SHE smells, how HER voice sounds, how HER hair flows in the wind..."
-		},
-		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
-			"portrait": "mom",
-			"boxState": "angry",
-			"expression": "angry",
-			"text": "What are you saying?!"
-		},
-		{
-			"sound": "dialogue/boyfriendText",
-			"speed": 0.05,
-			"portrait": "bf",
+			"text": "I love the way SHE smells, how HER voice sounds, how HER hair flows in the wind...",
 			"boxState": "normal",
-			"expression": "angry",
-			"text": "I'M SAYING I LOVE FAT BITCHES!! Mainly the one I'm with, but the others are cool too!!"
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
 		},
 		{
-			"sound": "dialogue/gfText",
-			"speed": 0.05,
-			"portrait": "gf",
+			"expression": "angry",
+			"text": "What are you saying?!",
 			"boxState": "angry",
+			"portrait": "mom",
+			"speed": 0.05,
+			"sound": "dialogue/momText"
+		},
+		{
+			"expression": "angry",
+			"text": "I'M SAYING I LOVE FAT BITCHES!! Mainly the one I'm with, but the others are cool too!!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
+		},
+		{
 			"expression": "happycry2",
-			"text": "Eghhjgfhhfh hooohooooo!?"
-		},
-		{
-			"sound": "dialogue/boyfriendText",
-			"speed": 0.05,
-			"portrait": "bf",
+			"text": "Eghhjgfhhfh hooohooooo!?",
 			"boxState": "angry",
-			"expression": "angry",
-			"text": "ALSO, you just let those imps die. They had lives, too!"
+			"portrait": "gf",
+			"speed": 0.05,
+			"sound": "dialogue/gfText"
 		},
 		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
-			"portrait": "mom",
-			"boxState": "normal",
 			"expression": "angry",
-			"text": "Tch, those imps couldn't take the heat, so they got kicked outta the kitchen."
+			"text": "ALSO, you just let those imps die. They had lives, too!",
+			"boxState": "angry",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
 		},
 		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
-			"portrait": "mom",
+			"expression": "angry",
+			"text": "Tch, those imps couldn't take the heat, so they got kicked outta the kitchen.",
 			"boxState": "normal",
+			"portrait": "mom",
+			"speed": 0.05,
+			"sound": "dialogue/momText"
+		},
+		{
 			"expression": "smirk",
-			"text": "By that I mean their limbs are strewn along the road."
+			"text": "By that I mean their limbs are strewn along the road.",
+			"boxState": "normal",
+			"portrait": "mom",
+			"speed": 0.05,
+			"sound": "dialogue/momText"
 		},
 		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
-			"portrait": "mom",
-			"boxState": "normal",
 			"expression": "happy",
-			"text": "Agh, you two are perfect for eachother!! Whatever, you can have 'em girl."
-		},
-		{
-			"sound": "dialogue/gfText",
-			"speed": 0.05,
-			"portrait": "gf",
-			"boxState": "angry",
-			"expression": "happycry2",
-			"text": "Momma!!"
-		},
-		{
-			"sound": "dialogue/gfText",
-			"speed": 0.05,
-			"portrait": "gf",
+			"text": "Agh, you two are perfect for eachother!! Whatever, you can have 'em girl.",
 			"boxState": "normal",
-			"expression": "happycry",
-			"text": "Even though you've permanently damaged my view of you and made my ego plummet, I love you for this!"
-		},
-		{
-			"sound": "dialogue/boyfriendText",
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "smile",
-			"text": "You serious, ma?!"
-		},
-		{
-			"sound": "dialogue/momText",
-			"speed": 0.05,
 			"portrait": "mom",
-			"boxState": "angry",
-			"expression": "smirk",
-			"text": "SIKE! You're still mine boh!"
+			"speed": 0.05,
+			"sound": "dialogue/momText"
 		},
 		{
-			"sound": "dialogue/boyfriendText",
+			"expression": "happycry2",
+			"text": "Momma!!",
+			"boxState": "angry",
+			"portrait": "gf",
 			"speed": 0.05,
-			"portrait": "bf",
+			"sound": "dialogue/gfText"
+		},
+		{
+			"expression": "happycry",
+			"text": "Even though you've permanently damaged my view of you and made my ego plummet, I love you for this!",
 			"boxState": "normal",
+			"portrait": "gf",
+			"speed": 0.05,
+			"sound": "dialogue/gfText"
+		},
+		{
 			"expression": "smile",
-			"text": "Wait wha-"
+			"text": "You serious, ma?!",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
+		},
+		{
+			"expression": "angry",
+			"text": "OF COURSE NOT! YOU'RE MINE BOH!",
+			"boxState": "angry",
+			"portrait": "mom",
+			"speed": 0.05,
+			"sound": "dialogue/momText"
+		},
+		{
+			"expression": "oof",
+			"text": "Wait wha-",
+			"boxState": "normal",
+			"portrait": "bf",
+			"speed": 0.05,
+			"sound": "dialogue/boyfriendText"
 		}
 	]
 }

@@ -148,7 +148,7 @@
 			"fps": 24,
 			"anim": "dodge-stressed",
 			"indices": [],
-			"name": "boyfriend dodge"
+			"name": "Stressed dodge"
 		},
 		{
 			"offsets": [
@@ -308,7 +308,7 @@
 				11,
 				12
 			],
-			"name": "boyfriend dodge"
+			"name": "Stressed dodge"
 		},
 		{
 			"offsets": [
@@ -440,7 +440,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/bfCar_MILF_Old",
+	"image": "characters/bfCarOld",
 	"position": [
 		10,
 		380

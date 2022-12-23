@@ -96,7 +96,7 @@
 			],
 			"anim": "dodge-stressed",
 			"fps": 24,
-			"name": "boyfriend dodge",
+			"name": "Stressed dodge",
 			"indices": []
 		},
 		{
@@ -269,7 +269,7 @@
 			],
 			"anim": "dodge-stressed-loop",
 			"fps": 24,
-			"name": "boyfriend dodge",
+			"name": "Stressed dodge",
 			"indices": [
 				11,
 				12

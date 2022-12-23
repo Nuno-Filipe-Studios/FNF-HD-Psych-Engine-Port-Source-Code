@@ -86,11 +86,61 @@
 				0,
 				14
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "cheer",
-			"loop": false,
+			"indices": [],
 			"name": "GF Cheer Hair blowing CAR0"
+		},
+		{
+			"offsets": [
+				-11,
+				19
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			],
+			"fps": 24,
+			"anim": "sad",
+			"loop": false,
+			"name": "gf sad Hair blowing CAR"
+		},
+		{
+			"offsets": [
+				-11,
+				19
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			],
+			"fps": 24,
+			"anim": "sad-cutscene",
+			"loop": true,
+			"name": "gf sad Hair blowing CAR"
 		}
 	],
 	"no_antialiasing": false,
@@ -108,7 +158,7 @@
 	],
 	"camera_position": [
 		0,
-		0
+		-100
 	],
 	"sing_duration": 4,
 	"scale": 1

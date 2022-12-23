@@ -102,10 +102,66 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	end
 	if tag == 'startEndDialogue' then
 		doTweenAlpha('bgFadeTween2', 'bgFade', 0.7, 1, 'circout')
-		startDialogue('dialogueGoodEnd')
+		if badEnding then
+			print('bad ending :(')
+			startDialogue('dialogueBadEnd')
+		else
+			print('good ending :)')
+			startDialogue('dialogueGoodEnd')
+		end
 	end
 	if tag == 'removeSprites2' then
 		removeLuaSprite('bgFade')
+	end
+	if tag == 'startCutscene' then
+		print('bad ending cutscene started')
+		makeLuaSprite('blackBG', 'colors/black', -500, -160)
+		setScrollFactor('blackBG', 0, 0)
+		scaleObject('blackBG', 50, 50)
+		addLuaSprite('blackBG', false)
+
+		makeLuaSprite('blackBG2', 'colors/black', 0, 0)
+		setObjectCamera('blackBG2','dialogue')
+		addLuaSprite('blackBG2', true)
+		setProperty('blackBG2.alpha', 0)
+
+		playAnim('dad', 'shootThatMF')
+		setProperty('dad.specialAnim', true)
+		if screenShakes then
+			cameraShake('game', 0.01, 0.2)
+		end
+		playSound('bwow')
+		startBeam()
+
+		triggerEvent('Change Character', 'bf', 'bf-laser-dead')
+		playAnim('boyfriend', 'firstDeath')
+		playAnim('gf', 'sad-cutscene')
+		setProperty('boyfriend.specialAnim', true)
+		setProperty('gf.specialAnim', true)
+		setProperty('overlay.visible', false)
+
+		playSound('fnf_loss_sfx')
+		runTimer('startNextCutscene', 3)
+	end
+	if tag == 'startFade' then
+		print('screen fade started')
+		doTweenAlpha('blackBGTween5', 'blackBG2', 1, 4, 'circout')
+		runTimer('finish', 6)
+		musicFadeOut(4, 0)
+	end
+	if tag == 'startNextCutscene' then
+		print('bf death anim started')
+		playAnim('boyfriend', 'deathLoop')
+		setProperty('boyfriend.specialAnim', true)
+
+		playMusic('gameOver', 1, true)
+		runTimer('startFade', 2)
+	end
+	if tag == 'finish' then
+		print('cutscene finished!')
+		setProperty('inCutscene', false)
+		fuckingEnded = true
+		exitSong()
 	end
 end
 
@@ -133,6 +189,8 @@ function onSkipDialogue(count)
 end
 
 local allowEndShit = false
+local seenShit = false
+local fuckingEnded = false
 function onEndSong()
 	if not allowEndShit and isStoryMode and dialogueIsStoryMode and dialogueIsDisabled then
 		makeLuaSprite('blackBG', 'colors/black', 0, 0)
@@ -167,9 +225,34 @@ function onEndSong()
 		runTimer('startEndDialogue', 0.5)
 
 		allowEndShit = true
+		seenShit = true
 		return Function_Stop
 	end
-	doTweenAlpha('bgFadeTween4', 'bgFade', 0, 1.2, 'circout')
-	runTimer('removeSprites2', 1.2)
+	if badEnding and seenShit and not fuckingEnded then
+		triggerEvent('Change Character', 'dad', 'mom-car')
+		triggerEvent('Camera Follow Pos', '960', '340')
+		setProperty('camHUD.visible', false)
+		doTweenAlpha('blackBGTween3', 'blackBG', 0, 1.2, 'circout')
+		doTweenAlpha('bgFadeTween4', 'bgFade', 0, 1.2, 'circout')
+		runTimer('removeSprites2', 1.2)
+		runTimer('startCutscene', 1.4)
+		return Function_Stop
+	end
+	if not badEnding then
+		doTweenAlpha('bgFadeTween4', 'bgFade', 0, 1.2, 'circout')
+		runTimer('removeSprites2', 1.2)
+	end
 	return Function_Continue
+end
+
+function onNextEndDialogue(count)
+	
+end
+
+function onSkipEndDialogue(count)
+
+end
+
+function onUpdatePost()
+
 end

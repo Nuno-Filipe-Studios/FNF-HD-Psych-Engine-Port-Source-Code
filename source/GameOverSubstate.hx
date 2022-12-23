@@ -89,7 +89,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		add(lmao);
 
 		if(PlayState.gofuckingdecked && !isEnding) {
-			new FlxTimer().start(1, function(e:FlxTimer){
+			new FlxTimer().start(1, function(e:FlxTimer) {
 				FlxTween.tween(lmao, {alpha: 1}, 0.7, {ease: FlxEase.quadIn});
 			});
 		}
@@ -136,6 +136,8 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.poleDeathCounter = 0;
 			PlayState.seenCutscene = false;
 			PlayState.gofuckingdecked = false;
+			PlayState.badEnding = false;
+			PlayState.fuckCval = false;
 
 			if (PlayState.isStoryMode) {
 				MusicBeatState.switchState(new StoryMenuState());

@@ -1719,7 +1719,10 @@ class ChartingState extends MusicBeatState
 
 
 			if (FlxG.keys.justPressed.BACKSPACE) {
+				PlayState.gofuckingdecked = false;
 				PlayState.chartingMode = false;
+				PlayState.badEnding = false;
+				PlayState.fuckCval = false;
 				MusicBeatState.switchState(new editors.MasterEditorMenu());
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 				FlxG.mouse.visible = false;

@@ -1,103 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="noooooo.png">
-	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
-	<!-- http://www.adobe.com/products/flash.html -->
-	<SubTexture name="Henchmen on rail PINK0000" x="0" y="0" width="434" height="380"/>
-	<SubTexture name="henchmen death2 PINK0000" x="118" y="999" width="265" height="304"/>
-	<SubTexture name="hench arm spin 2 PINK0000" x="435" y="0" width="121" height="131" frameX="-7" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0001" x="435" y="0" width="121" height="131" frameX="-7" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0002" x="557" y="0" width="134" height="114" frameX="0" frameY="-8" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0003" x="557" y="0" width="134" height="114" frameX="0" frameY="-8" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0004" x="692" y="0" width="122" height="131" frameX="-6" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0005" x="692" y="0" width="122" height="131" frameX="-6" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0006" x="815" y="0" width="132" height="120" frameX="-2" frameY="-5" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0007" x="815" y="0" width="132" height="120" frameX="-2" frameY="-5" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0008" x="435" y="0" width="121" height="131" frameX="-7" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0009" x="435" y="0" width="121" height="131" frameX="-7" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0010" x="557" y="0" width="134" height="114" frameX="0" frameY="-8" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0011" x="557" y="0" width="134" height="114" frameX="0" frameY="-8" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0012" x="692" y="0" width="122" height="131" frameX="-6" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0013" x="692" y="0" width="122" height="131" frameX="-6" frameY="0" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0014" x="815" y="0" width="132" height="120" frameX="-2" frameY="-5" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin 2 PINK0015" x="815" y="0" width="132" height="120" frameX="-2" frameY="-5" frameWidth="134" frameHeight="131"/>
-	<SubTexture name="hench arm spin PINK0000" x="0" y="381" width="92" height="141" frameX="-25" frameY="0" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0001" x="0" y="381" width="92" height="141" frameX="-25" frameY="0" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0002" x="93" y="381" width="141" height="95" frameX="0" frameY="-23" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0003" x="93" y="381" width="141" height="95" frameX="0" frameY="-23" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0004" x="235" y="381" width="96" height="139" frameX="-23" frameY="-1" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0005" x="235" y="381" width="96" height="139" frameX="-23" frameY="-1" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0006" x="332" y="381" width="132" height="106" frameX="-5" frameY="-16" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0007" x="332" y="381" width="132" height="106" frameX="-5" frameY="-16" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0008" x="0" y="381" width="92" height="141" frameX="-25" frameY="0" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0009" x="0" y="381" width="92" height="141" frameX="-25" frameY="0" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0010" x="93" y="381" width="141" height="95" frameX="0" frameY="-23" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0011" x="93" y="381" width="141" height="95" frameX="0" frameY="-23" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0012" x="235" y="381" width="96" height="139" frameX="-23" frameY="-1" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0013" x="235" y="381" width="96" height="139" frameX="-23" frameY="-1" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0014" x="332" y="381" width="132" height="106" frameX="-5" frameY="-16" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench arm spin PINK0015" x="332" y="381" width="132" height="106" frameX="-5" frameY="-16" frameWidth="141" frameHeight="141"/>
-	<SubTexture name="hench head spin 2 PINK0000" x="465" y="381" width="157" height="234" frameX="-40" frameY="-3" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0001" x="465" y="381" width="157" height="234" frameX="-40" frameY="-3" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0002" x="623" y="381" width="212" height="170" frameX="-25" frameY="-20" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0003" x="623" y="381" width="212" height="170" frameX="-25" frameY="-20" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0004" x="836" y="381" width="172" height="209" frameX="-17" frameY="0" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0005" x="836" y="381" width="172" height="209" frameX="-17" frameY="0" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0006" x="0" y="616" width="205" height="173" frameX="0" frameY="-51" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0007" x="0" y="616" width="205" height="173" frameX="0" frameY="-51" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0008" x="465" y="381" width="157" height="234" frameX="-40" frameY="-3" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0009" x="465" y="381" width="157" height="234" frameX="-40" frameY="-3" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0010" x="623" y="381" width="212" height="170" frameX="-25" frameY="-20" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0011" x="623" y="381" width="212" height="170" frameX="-25" frameY="-20" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0012" x="836" y="381" width="172" height="209" frameX="-17" frameY="0" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0013" x="836" y="381" width="172" height="209" frameX="-17" frameY="0" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0014" x="0" y="616" width="205" height="173" frameX="0" frameY="-51" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin 2 PINK0015" x="0" y="616" width="205" height="173" frameX="0" frameY="-51" frameWidth="237" frameHeight="237"/>
-	<SubTexture name="hench head spin PINK0000" x="206" y="616" width="160" height="214" frameX="-39" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0001" x="206" y="616" width="160" height="214" frameX="-39" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0002" x="367" y="616" width="223" height="167" frameX="0" frameY="-1" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0003" x="367" y="616" width="223" height="167" frameX="0" frameY="-1" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0004" x="591" y="616" width="161" height="217" frameX="-30" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0005" x="591" y="616" width="161" height="217" frameX="-30" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0006" x="753" y="616" width="224" height="174" frameX="-15" frameY="-45" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0007" x="753" y="616" width="224" height="174" frameX="-15" frameY="-45" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0008" x="206" y="616" width="160" height="214" frameX="-39" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0009" x="206" y="616" width="160" height="214" frameX="-39" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0010" x="367" y="616" width="223" height="167" frameX="0" frameY="-1" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0011" x="367" y="616" width="223" height="167" frameX="0" frameY="-1" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0012" x="591" y="616" width="161" height="217" frameX="-30" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0013" x="591" y="616" width="161" height="217" frameX="-30" frameY="0" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0014" x="753" y="616" width="224" height="174" frameX="-15" frameY="-45" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench head spin PINK0015" x="753" y="616" width="224" height="174" frameX="-15" frameY="-45" frameWidth="239" frameHeight="219"/>
-	<SubTexture name="hench leg spin 2 PINK0000" x="0" y="834" width="143" height="126" frameX="0" frameY="-15" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0001" x="0" y="834" width="143" height="126" frameX="0" frameY="-15" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0002" x="144" y="834" width="137" height="144" frameX="0" frameY="-8" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0003" x="144" y="834" width="137" height="144" frameX="0" frameY="-8" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0004" x="282" y="834" width="142" height="141" frameX="-7" frameY="-13" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0005" x="282" y="834" width="142" height="141" frameX="-7" frameY="-13" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0006" x="425" y="834" width="140" height="143" frameX="-6" frameY="0" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0007" x="425" y="834" width="140" height="143" frameX="-6" frameY="0" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0008" x="0" y="834" width="143" height="126" frameX="0" frameY="-15" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0009" x="0" y="834" width="143" height="126" frameX="0" frameY="-15" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0010" x="144" y="834" width="137" height="144" frameX="0" frameY="-8" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0011" x="144" y="834" width="137" height="144" frameX="0" frameY="-8" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0012" x="282" y="834" width="142" height="141" frameX="-7" frameY="-13" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0013" x="282" y="834" width="142" height="141" frameX="-7" frameY="-13" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0014" x="425" y="834" width="140" height="143" frameX="-6" frameY="0" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin 2 PINK0015" x="425" y="834" width="140" height="143" frameX="-6" frameY="0" frameWidth="149" frameHeight="154"/>
-	<SubTexture name="hench leg spin PINK0000" x="566" y="834" width="158" height="111" frameX="-5" frameY="-29" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0001" x="566" y="834" width="158" height="111" frameX="-5" frameY="-29" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0002" x="725" y="834" width="129" height="164" frameX="-20" frameY="-3" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0003" x="725" y="834" width="129" height="164" frameX="-20" frameY="-3" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0004" x="855" y="834" width="166" height="127" frameX="0" frameY="-21" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0005" x="855" y="834" width="166" height="127" frameX="0" frameY="-21" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0006" x="0" y="999" width="117" height="167" frameX="-25" frameY="0" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0007" x="0" y="999" width="117" height="167" frameX="-25" frameY="0" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0008" x="566" y="834" width="158" height="111" frameX="-5" frameY="-29" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0009" x="566" y="834" width="158" height="111" frameX="-5" frameY="-29" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0010" x="725" y="834" width="129" height="164" frameX="-20" frameY="-3" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0011" x="725" y="834" width="129" height="164" frameX="-20" frameY="-3" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0012" x="855" y="834" width="166" height="127" frameX="0" frameY="-21" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0013" x="855" y="834" width="166" height="127" frameX="0" frameY="-21" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0014" x="0" y="999" width="117" height="167" frameX="-25" frameY="0" frameWidth="166" frameHeight="167"/>
-	<SubTexture name="hench leg spin PINK0015" x="0" y="999" width="117" height="167" frameX="-25" frameY="0" frameWidth="166" frameHeight="167"/>
+<TextureAtlas imagePath="nooooooHD.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="alvinDEAD0000" x="0" y="0" width="380" height="405" frameX="0" frameY="-73" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0001" x="380" y="0" width="380" height="405" frameX="0" frameY="-73" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0002" x="760" y="0" width="452" height="404" frameX="-38" frameY="-37" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0003" x="1212" y="0" width="452" height="404" frameX="-38" frameY="-37" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0004" x="1664" y="0" width="533" height="563" frameX="-9" frameY="0" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0005" x="2197" y="0" width="533" height="563" frameX="-9" frameY="0" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0006" x="2730" y="0" width="676" height="632" frameX="-9" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0007" x="2730" y="0" width="676" height="632" frameX="-9" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0008" x="0" y="632" width="703" height="746" frameX="-33" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0009" x="0" y="632" width="703" height="746" frameX="-33" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0010" x="703" y="632" width="220" height="510" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0011" x="703" y="632" width="220" height="510" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0012" x="923" y="632" width="287" height="519" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0013" x="923" y="632" width="287" height="519" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0014" x="1210" y="632" width="331" height="529" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0015" x="1210" y="632" width="331" height="529" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0016" x="1541" y="632" width="391" height="519" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0017" x="1541" y="632" width="391" height="519" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0018" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0019" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0020" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="alvinDEAD0021" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-80" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0000" x="1942" y="632" width="380" height="405" frameX="0" frameY="-74" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0001" x="2322" y="632" width="380" height="405" frameX="0" frameY="-74" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0002" x="2702" y="632" width="453" height="393" frameX="-38" frameY="-49" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0003" x="3155" y="632" width="453" height="393" frameX="-38" frameY="-49" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0004" x="0" y="1378" width="507" height="564" frameX="-35" frameY="0" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0005" x="507" y="1378" width="507" height="564" frameX="-35" frameY="0" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0006" x="1014" y="1378" width="650" height="632" frameX="-36" frameY="-81" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0007" x="1014" y="1378" width="650" height="632" frameX="-36" frameY="-81" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0008" x="1664" y="1378" width="690" height="746" frameX="-46" frameY="-81" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0009" x="1664" y="1378" width="690" height="746" frameX="-46" frameY="-81" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="bojanglesDEAD0010" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0011" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0012" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0013" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0014" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0015" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0016" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0017" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0018" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0019" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0020" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bojanglesDEAD0021" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0000" x="2354" y="1378" width="380" height="406" frameX="0" frameY="-58" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0001" x="2734" y="1378" width="380" height="406" frameX="0" frameY="-58" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0002" x="3114" y="1378" width="440" height="415" frameX="-38" frameY="-12" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0003" x="3554" y="1378" width="440" height="415" frameX="-38" frameY="-12" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0004" x="0" y="2124" width="533" height="549" frameX="-9" frameY="0" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0005" x="533" y="2124" width="533" height="549" frameX="-9" frameY="0" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0006" x="1066" y="2124" width="629" height="632" frameX="-9" frameY="-66" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0007" x="1066" y="2124" width="629" height="632" frameX="-9" frameY="-66" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="bubblesDEAD0008" x="0" y="632" width="703" height="746" frameX="-33" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0009" x="0" y="632" width="703" height="746" frameX="-33" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0010" x="703" y="632" width="220" height="510" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0011" x="703" y="632" width="220" height="510" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0012" x="923" y="632" width="287" height="519" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0013" x="923" y="632" width="287" height="519" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0014" x="1210" y="632" width="331" height="529" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0015" x="1210" y="632" width="331" height="529" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0016" x="1541" y="632" width="391" height="519" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0017" x="1541" y="632" width="391" height="519" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0018" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0019" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0020" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="bubblesDEAD0021" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0000" x="1695" y="2124" width="380" height="418" frameX="0" frameY="-58" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0001" x="2075" y="2124" width="380" height="418" frameX="0" frameY="-58" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0002" x="2455" y="2124" width="440" height="415" frameX="-38" frameY="-12" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0003" x="2895" y="2124" width="440" height="415" frameX="-38" frameY="-12" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0004" x="3335" y="2124" width="507" height="549" frameX="-35" frameY="0" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0005" x="0" y="2756" width="507" height="549" frameX="-35" frameY="0" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0006" x="507" y="2756" width="619" height="632" frameX="-36" frameY="-66" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0007" x="507" y="2756" width="619" height="632" frameX="-36" frameY="-66" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="limoDancerDEAD0008" x="1664" y="1378" width="690" height="746" frameX="-46" frameY="-66" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD0009" x="1664" y="1378" width="690" height="746" frameX="-46" frameY="-66" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD0010" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0011" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0012" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0013" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0014" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0015" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0016" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0017" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0018" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0019" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0020" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD0021" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20000" x="1126" y="2756" width="380" height="408" frameX="0" frameY="-71" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20001" x="1506" y="2756" width="380" height="408" frameX="0" frameY="-71" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20002" x="1886" y="2756" width="453" height="405" frameX="-38" frameY="-37" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20003" x="2339" y="2756" width="453" height="405" frameX="-38" frameY="-37" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20004" x="2792" y="2756" width="533" height="564" frameX="-9" frameY="0" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20005" x="3325" y="2756" width="533" height="564" frameX="-9" frameY="0" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20006" x="0" y="3388" width="677" height="632" frameX="-9" frameY="-81" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20007" x="0" y="3388" width="677" height="632" frameX="-9" frameY="-81" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="limoDancerDEAD 20008" x="0" y="632" width="703" height="746" frameX="-33" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20009" x="0" y="632" width="703" height="746" frameX="-33" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20010" x="703" y="632" width="220" height="510" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20011" x="703" y="632" width="220" height="510" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20012" x="923" y="632" width="287" height="519" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20013" x="923" y="632" width="287" height="519" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20014" x="1210" y="632" width="331" height="529" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20015" x="1210" y="632" width="331" height="529" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20016" x="1541" y="632" width="391" height="519" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20017" x="1541" y="632" width="391" height="519" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20018" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="limoDancerDEAD 20019" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-81" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0000" x="1695" y="2124" width="380" height="418" frameX="0" frameY="-58" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0001" x="2075" y="2124" width="380" height="418" frameX="0" frameY="-58" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0002" x="677" y="3388" width="440" height="415" frameX="-38" frameY="-12" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0003" x="1117" y="3388" width="440" height="415" frameX="-38" frameY="-12" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0004" x="3335" y="2124" width="507" height="549" frameX="-35" frameY="0" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0005" x="3335" y="2124" width="507" height="549" frameX="-35" frameY="0" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0006" x="507" y="2756" width="619" height="632" frameX="-36" frameY="-66" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0007" x="507" y="2756" width="619" height="632" frameX="-36" frameY="-66" frameWidth="736" frameHeight="812"/>
+	<SubTexture name="michaelDEAD0008" x="1664" y="1378" width="690" height="746" frameX="-46" frameY="-66" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="michaelDEAD0009" x="1664" y="1378" width="690" height="746" frameX="-46" frameY="-66" frameWidth="736" frameHeight="827"/>
+	<SubTexture name="michaelDEAD0010" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0011" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0012" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0013" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0014" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0015" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0016" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0017" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0018" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0019" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0020" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
+	<SubTexture name="michaelDEAD0021" x="1932" y="632" width="10" height="12" frameX="-46" frameY="-66" frameWidth="736" frameHeight="826"/>
 </TextureAtlas>
