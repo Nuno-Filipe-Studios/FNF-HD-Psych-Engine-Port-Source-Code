@@ -271,7 +271,7 @@ class PlayState extends MusicBeatState
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 
 	var billboard:BGSprite;
-	var limo:BGSprite;
+	public var limo:BGSprite;
 	var skyBG:BGSprite;
 	var dodgelamp:BGSprite;
 	var dodgepole:BGSprite;
@@ -4939,16 +4939,19 @@ class PlayState extends MusicBeatState
 				}
 
 			case 'Camera Follow Pos':
-				var val1:Float = Std.parseFloat(value1);
-				var val2:Float = Std.parseFloat(value2);
-				if(Math.isNaN(val1)) val1 = 0;
-				if(Math.isNaN(val2)) val2 = 0;
+				if(camFollow != null)
+				{
+					var val1:Float = Std.parseFloat(value1);
+					var val2:Float = Std.parseFloat(value2);
+					if(Math.isNaN(val1)) val1 = 0;
+					if(Math.isNaN(val2)) val2 = 0;
 
-				isCameraOnForcedPos = false;
-				if(!Math.isNaN(Std.parseFloat(value1)) || !Math.isNaN(Std.parseFloat(value2))) {
-					camFollow.x = val1;
-					camFollow.y = val2;
-					isCameraOnForcedPos = true;
+					isCameraOnForcedPos = false;
+					if(!Math.isNaN(Std.parseFloat(value1)) || !Math.isNaN(Std.parseFloat(value2))) {
+						camFollow.x = val1;
+						camFollow.y = val2;
+						isCameraOnForcedPos = true;
+					}
 				}
 
 			case 'Alt Idle Animation':
@@ -5121,10 +5124,24 @@ class PlayState extends MusicBeatState
 					{
 						case 0:
 							if(gf != null && gf.stunned) {
-								gf.stunned = false;
+								if(gf != null && gf.animOffsets.exists('fall')) {
+									gf.playAnim('fall', true, true);
+									FlxG.sound.play(Paths.sound('fellOverReverse'), 1);
+									gf.animation.finishCallback = function(anim:String)
+									{
+										gf.stunned = false;
+										gf.recalculateDanceIdle();
+									}
+								}
 							}
 
 						case 1:
+							camFollow.set(gf.getMidpoint().x, gf.getMidpoint().y);
+							camFollow.x += gf.cameraPosition[0] + girlfriendCameraOffset[0];
+							camFollow.y += gf.cameraPosition[1] + girlfriendCameraOffset[1];
+							isCameraOnForcedPos = true;
+
+						case 2:
 							gfFallTimer = new FlxTimer().start(0.2, function(tmr:FlxTimer)
 							{
 								if(gf != null && gf.animOffsets.exists('fall')) {
@@ -5458,6 +5475,18 @@ class PlayState extends MusicBeatState
 		var usedPractice:Bool = (ClientPrefs.getGameplaySetting('practice', false) || ClientPrefs.getGameplaySetting('botplay', false));
 		if(curSong.toLowerCase() == 'tutorial' && songMisses < 1 && ratingPercent >= 1 && !usedPractice && isStoryMode /*&& FlxG.random.bool(20)*/) {
 			gfTiddies();
+		}
+
+		if(curSong.toLowerCase() == 'milf' && badEnding) // it saves the score for Milf when you get the bad ending cutscene
+		{
+			if (SONG.validScore)
+			{
+				#if !switch
+				var percent:Float = ratingPercent;
+				if(Math.isNaN(percent)) percent = 0;
+				Highscore.saveScore(SONG.song, songScore, storyDifficulty, percent);
+				#end
+			}
 		}
 
 		var ret:Dynamic = callOnLuas('onEndSong', [], false);

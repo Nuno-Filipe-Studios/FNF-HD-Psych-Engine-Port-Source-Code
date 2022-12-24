@@ -1,10 +1,5 @@
 {
 	"song": {
-		"speed": 2.4,
-		"stage": "mallEvil",
-		"player1": "bf-christmas-depressed",
-		"player2": "monster-christmas",
-		"player3": null,
 		"events": [
 			[
 				0,
@@ -47,17 +42,7 @@
 				]
 			],
 			[
-				85188.679245283,
-				[
-					[
-						"Camera Follow Pos",
-						"850",
-						"590"
-					]
-				]
-			],
-			[
-				85790.0943396227,
+				84811.320754717,
 				[
 					[
 						"Make GF Fall",
@@ -67,7 +52,17 @@
 				]
 			],
 			[
-				86537.7358490566,
+				85471.6981132076,
+				[
+					[
+						"Make GF Fall",
+						"2",
+						""
+					]
+				]
+			],
+			[
+				86415.0943396227,
 				[
 					[
 						"Camera Follow Pos",
@@ -76,14 +71,6 @@
 					]
 				]
 			]
-		],
-		"notes": [],
-		"splashSkin": null,
-		"validScore": false,
-		"gfVersion": "gf-christmas-dead",
-		"bpm": 159,
-		"arrowSkin": null,
-		"needsVoices": true,
-		"song": "Winter Horrorland"
+		]
 	}
 }

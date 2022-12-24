@@ -60,6 +60,9 @@
 				-28,
 				-163
 			],
+			"loop": false,
+			"fps": 24,
+			"anim": "fall",
 			"indices": [
 				0,
 				1,
@@ -74,9 +77,6 @@
 				10,
 				11
 			],
-			"fps": 24,
-			"anim": "fall",
-			"loop": false,
 			"name": "GF Fall"
 		}
 	],
@@ -94,8 +94,8 @@
 		77
 	],
 	"camera_position": [
-		-120,
-		50
+		40,
+		20
 	],
 	"sing_duration": 4,
 	"scale": 1

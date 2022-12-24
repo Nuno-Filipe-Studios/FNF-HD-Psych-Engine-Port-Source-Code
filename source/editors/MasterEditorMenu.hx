@@ -136,6 +136,7 @@ class MasterEditorMenu extends MusicBeatState
 			FlxG.sound.music.volume = 0;
 			#if PRELOAD_ALL
 			FreeplayState.destroyFreeplayVocals();
+			FreeplayState.curPlaying = false;
 			#end
 		}
 		

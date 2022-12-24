@@ -560,7 +560,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				char.animation.curAnim.frameRate = rate;
 			}
 
-			if(curDialogue.effect != null) doEffect(curDialogue.effect, char, curDialogue.effectTime);
+			//if(curDialogue.effect != null) doEffect(curDialogue.effect, char, curDialogue.effectTime);
 		}
 		currentText++;
 
@@ -569,7 +569,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 		}
 	}
 
-	var posTween:FlxTween;
+	/*var posTween:FlxTween;
 	var alphaTween:FlxTween;
 	function doEffect(effect:String, portrait:Dynamic, ?time:Float = 1)
 	{
@@ -589,7 +589,7 @@ class DialogueBoxPsych extends FlxSpriteGroup
 				posTween.cancel();
 				posTween = FlxTween.tween(portrait, {x: FlxG.width}, time, {ease: FlxEase.circIn});
 		}
-	}
+	}*/
 
 	public static function parseDialogue(path:String):DialogueFile {
 		#if MODS_ALLOWED

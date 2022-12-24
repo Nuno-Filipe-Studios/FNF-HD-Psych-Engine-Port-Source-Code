@@ -96,7 +96,7 @@ class ChartingState extends MusicBeatState
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Start Pole', "For \"limo\" stage, you can only use this if the\n\"Dodge Pole Spawns Randomly\" option is unchecked"],
 		['Start Draining Health', "Starts draining players health.\nValue 1: 0/1 = OFF/ON\nUsed in Winter Horrorland."],
-		['Make GF Fall', "Makes GF fall lol\nValue 1: 0/1 = reset/fall\nOnly works with \"gf-christmas-dead\" "],
+		['Make GF Fall', "Makes GF fall lol\nValue 1: 0/1/2 = reset/cam pointed to gf/fall\nOnly works with \"gf-christmas-dead\" "],
 		['HUD Fade', "Value 1: 0/1 = Fade In/Fade Out\nValue 2: Fade duration"],
 		['Trigger Sonic Transformation', "Triggers super sonic transformation anim\nValue 1: 0/1/2/3 = reset/start/transform/finish"],
 		['Camera Flash', "You know what it is.\nValue 1: black/white/yellow/blue/red\nValue 2: Flash duration"],

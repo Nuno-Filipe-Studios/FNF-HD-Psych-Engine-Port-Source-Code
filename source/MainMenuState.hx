@@ -27,7 +27,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.5.2h'; //This is also used for Discord RPC
-	public static var HDportVersion:String = '0.9.8';
+	public static var HDportVersion:String = '0.9.9';
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -273,7 +273,10 @@ class MainMenuState extends MusicBeatState
 								{
 									case 'story_mode':
 										FlxG.sound.music.stop();
+										#if PRELOAD_ALL
+										FreeplayState.curPlaying = false;
 										FreeplayState.destroyFreeplayVocals();
+										#end
 										MusicBeatState.switchState(new StoryMenuState());
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
@@ -283,7 +286,10 @@ class MainMenuState extends MusicBeatState
 									#end
 									case 'gallery':
 										MusicBeatState.switchState(new Gallery());
+										#if PRELOAD_ALL
 										FreeplayState.destroyFreeplayVocals();
+										FreeplayState.curPlaying = false;
+										#end
 										FlxG.sound.music.stop();
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());

@@ -120,8 +120,14 @@ function onTimerCompleted(tag, loops, loopsLeft)
 		scaleObject('blackBG', 50, 50)
 		addLuaSprite('blackBG', false)
 
+		makeLuaSprite('badEndingText', 'limo/BadEndingText', 420, 40)
+		setScrollFactor('badEndingText', 0, 0)
+		setObjectCamera('badEndingText', 'other')
+		addLuaSprite('badEndingText', true)
+		setProperty('badEndingText.alpha', 0)
+
 		makeLuaSprite('blackBG2', 'colors/black', 0, 0)
-		setObjectCamera('blackBG2','dialogue')
+		setObjectCamera('blackBG2', 'other')
 		addLuaSprite('blackBG2', true)
 		setProperty('blackBG2.alpha', 0)
 
@@ -139,6 +145,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 		setProperty('boyfriend.specialAnim', true)
 		setProperty('gf.specialAnim', true)
 		setProperty('overlay.visible', false)
+		setProperty('limo.visible', false)
 
 		playSound('fnf_loss_sfx')
 		runTimer('startNextCutscene', 3)
@@ -146,7 +153,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'startFade' then
 		print('screen fade started')
 		doTweenAlpha('blackBGTween5', 'blackBG2', 1, 4, 'circout')
-		runTimer('finish', 6)
+		runTimer('finish', 5)
 		musicFadeOut(4, 0)
 	end
 	if tag == 'startNextCutscene' then
@@ -154,8 +161,9 @@ function onTimerCompleted(tag, loops, loopsLeft)
 		playAnim('boyfriend', 'deathLoop')
 		setProperty('boyfriend.specialAnim', true)
 
+		doTweenAlpha('badEndingTextTween', 'badEndingText', 1, 1.5, 'circout')
 		playMusic('gameOver', 1, true)
-		runTimer('startFade', 2)
+		runTimer('startFade', 3.5)
 	end
 	if tag == 'finish' then
 		print('cutscene finished!')
@@ -237,8 +245,7 @@ function onEndSong()
 		runTimer('removeSprites2', 1.2)
 		runTimer('startCutscene', 1.4)
 		return Function_Stop
-	end
-	if not badEnding then
+	else
 		doTweenAlpha('bgFadeTween4', 'bgFade', 0, 1.2, 'circout')
 		runTimer('removeSprites2', 1.2)
 	end
