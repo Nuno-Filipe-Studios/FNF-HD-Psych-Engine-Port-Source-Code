@@ -5116,14 +5116,17 @@ class PlayState extends MusicBeatState
 				if(gf.curCharacter == 'gf-christmas-dead')
 				{
 					var fallShit:Int = Std.parseInt(value1);
+					var fallShit2:Int = Std.parseInt(value2);
 					precacheList.set('fellOver', 'sound');
 					precacheList.set('fellOverReverse', 'sound');
-					if(Math.isNaN(fallShit)) fallShit = 0;
+					if(Math.isNaN(fallShit)) fallShit = 2;
+					if(Math.isNaN(fallShit2)) fallShit2 = 1;
 
 					switch(fallShit)
 					{
 						case 0:
-							if(gf != null && gf.stunned) {
+							if(gf != null && gf.stunned)
+							{
 								if(gf != null && gf.animOffsets.exists('fall')) {
 									gf.playAnim('fall', true, true);
 									FlxG.sound.play(Paths.sound('fellOverReverse'), 1);
@@ -5156,6 +5159,23 @@ class PlayState extends MusicBeatState
 									});
 								}
 							});
+
+						case 3:
+							if(fallShit2 == 1)
+							{
+								isCameraOnForcedPos = false;
+								camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
+								camFollow.x += dad.cameraPosition[0] + opponentCameraOffset[0];
+								camFollow.y += dad.cameraPosition[1] + opponentCameraOffset[1];
+								tweenCamIn();
+							}
+							else if(fallShit2 == 2)
+							{
+								isCameraOnForcedPos = false;
+								camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
+								camFollow.x -= boyfriend.cameraPosition[0] - boyfriendCameraOffset[0];
+								camFollow.y += boyfriend.cameraPosition[1] + boyfriendCameraOffset[1];
+							}
 					}
 				}
 

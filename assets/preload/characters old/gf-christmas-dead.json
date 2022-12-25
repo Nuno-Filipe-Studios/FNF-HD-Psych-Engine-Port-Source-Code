@@ -1,13 +1,14 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-28,
 				-54
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "danceLeft",
+			"fps": 24,
+			"name": "GF Dancing Beat Dead",
 			"indices": [
 				30,
 				0,
@@ -25,17 +26,17 @@
 				12,
 				13,
 				14
-			],
-			"name": "GF Dancing Beat Dead"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-28,
 				-54
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "danceRight",
+			"fps": 24,
+			"name": "GF Dancing Beat Dead",
 			"indices": [
 				15,
 				16,
@@ -52,17 +53,17 @@
 				27,
 				28,
 				29
-			],
-			"name": "GF Dancing Beat Dead"
+			]
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-28,
 				-163
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "fall",
+			"fps": 24,
+			"name": "GF Fall",
 			"indices": [
 				0,
 				1,
@@ -76,8 +77,7 @@
 				9,
 				10,
 				11
-			],
-			"name": "GF Fall"
+			]
 		}
 	],
 	"no_antialiasing": false,
@@ -95,7 +95,7 @@
 	],
 	"camera_position": [
 		40,
-		20
+		50
 	],
 	"sing_duration": 4,
 	"scale": 1
